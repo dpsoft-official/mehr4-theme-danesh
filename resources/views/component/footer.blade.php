@@ -83,6 +83,8 @@
                                                             <li>
                                                                 <a class="socail" style="" href="{{setting('social.instagram')}}"><i
                                                                         class="icon-instagram"></i></a>
+                                                                <span>{{setting('social.instagram.text')}}</span>
+
                                                                 {!!setting_edit('social.instagram')!!}
                                                             </li>
                                                             @endif
@@ -90,6 +92,7 @@
                                                                     <li>
                                                                         <a class="socail" style="" href="{{setting('social.instagram2')}}"><i
                                                                                 class="icon-instagram"></i></a>
+                                                                        <span>{{setting('social.instagram2.text')}}</span>
                                                                         {!!setting_edit('social.instagram2')!!}
                                                                     </li>
                                                                 @endif
@@ -97,6 +100,7 @@
                                                                     <li>
                                                                         <a class="socail" style="" href="{{setting('social.instagram3')}}"><i
                                                                                 class="icon-instagram"></i></a>
+                                                                        <span>{{setting('social.instagram3.text')}}</span>
                                                                         {!!setting_edit('social.instagram3')!!}
                                                                     </li>
                                                                 @endif
@@ -104,6 +108,7 @@
                                                                     <li>
                                                                         <a class="socail" style="" href="{{setting('social.instagram4')}}"><i
                                                                                 class="icon-instagram"></i></a>
+                                                                        <span>{{setting('social.instagram4.text')}}</span>
                                                                         {!!setting_edit('social.instagram4')!!}
                                                                     </li>
                                                                 @endif
@@ -111,18 +116,21 @@
                                                                     <li>
                                                                         <a class="socail" style="" href="{{setting('social.instagram5')}}"><i
                                                                                 class="icon-instagram"></i></a>
+                                                                        <span>{{setting('social.instagram5.text')}}</span>
                                                                         {!!setting_edit('social.instagram5')!!}
                                                                     </li>
                                                                 @endif
                                                                 @if(setting('social.telegram')!=null)
                                                                     <li>
                                                                         <a class="socail" style="" href="{{setting('social.telegram')}}"><i
-                                                                                class="icon-instagram"></i></a>
+                                                                                class="icon-telegram"></i></a>
+                                                                        <span>{{setting('social.telegram.text')}}</span>
                                                                         {!!setting_edit('social.telegram')!!}
                                                                     </li>
                                                                 @endif
 
                                                         </ul>
+
 {{--                                                        <p style="color: #000;">--}}
 
 {{--                                                            @if(setting('social.instagram')!=null)--}}

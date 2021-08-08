@@ -42,7 +42,7 @@
                                 <a href=""><span>وبلاگ</span></a>
                                 <ul class="sub-menu" style="display: none;">
 
-                                    <li><a href="{{route('tag-posts', ['tag' => '2', 'name' => 'مقالات'])}}">
+                                    <li><a href="{{route('blog')}}">
          <span>
            مقالات
    </span>

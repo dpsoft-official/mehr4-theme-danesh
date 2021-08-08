@@ -100,7 +100,7 @@
                                                 class="image_frame image_item no_link scale-with-grid alignnone no_border">
                                                 <div class="image_wrapper">
                                                     <img class="scale-with-grid thumbnail"
-                                                         src="{{Storage::url('theme/icon1.png')}}"
+                                                         src="/vendor/mehr4-theme-danesh/images/theme/icon1.png"
                                                          alt="{{setting('site.name')}}"
                                                          title="{{setting('site.name')}}"
                                                          width="150px"
@@ -132,7 +132,7 @@
                                                 class="image_frame image_item no_link scale-with-grid alignnone no_border">
                                                 <div class="image_wrapper">
                                                     <img class="scale-with-grid"
-                                                         src="{{Storage::url('theme/icon2.png')}}"
+                                                         src="/vendor/mehr4-theme-danesh/images/theme/icon2.png"
                                                          alt="{{setting('site.name')}}"
                                                          title="{{setting('site.name')}}" width="150px">
                                                 </div>
@@ -140,7 +140,7 @@
                                             <hr class="no_line" style="margin:0 auto 20px">
                                             <h4>
                                                 <a href="">{{setting('icon2.title')}}</a>
-                                                {!!setting_edit('icon1.title')!!}
+                                                {!!setting_edit('icon2.title')!!}
                                             </h4>
                                             <hr style=";color:gray;margin:0 auto 20px">
                                             <h6>{{setting('icon2.text')}}</h6>
@@ -162,7 +162,7 @@
                                                 class="image_frame image_item no_link scale-with-grid alignnone no_border">
                                                 <div class="image_wrapper">
                                                     <img class="scale-with-grid"
-                                                         src="{{Storage::url('theme/icon3.png')}}"
+                                                         src="/vendor/mehr4-theme-danesh/images/theme/icon3.png"
                                                          alt="{{setting('site.name')}}"
                                                          title="{{setting('site.name')}}" width="150px">
                                                 </div>
@@ -190,7 +190,7 @@
                                                 class="image_frame image_item no_link scale-with-grid alignnone no_border">
                                                 <div class="image_wrapper">
                                                     <img class="scale-with-grid"
-                                                         src="{{Storage::url('theme/icon4.png')}}"
+                                                         src="/vendor/mehr4-theme-danesh/images/theme/icon4.png"
                                                          alt="{{setting('site.name')}}"
                                                          title="{{setting('site.name')}}" width="150px">
                                                 </div>
@@ -260,7 +260,7 @@
                                                                             href="{{$featuredCourse->url}}">
                                                                             <div class="mask"></div>
                                                                             <img width="960" height="720"
-{{--                                                                                 src="https://themes.muffingroup.com/betheme/wp-content/uploads/2020/10/betheme-portfolio-pic1-960x720.jpg"--}}
+                                                                                 {{--                                                                                 src="https://themes.muffingroup.com/betheme/wp-content/uploads/2020/10/betheme-portfolio-pic1-960x720.jpg"--}}
                                                                                  class="scale-with-grid wp-post-image"
                                                                                  alt=""
                                                                                  loading="lazy"
@@ -274,17 +274,16 @@
                                                                                                    itemprop="headline">
                                                                             <a
                                                                                 class="link"
-                                                                                href="{{$featuredCourse->url}}" style="color: black!important;">{{$featuredCourse->title}}</a></h5>
+                                                                                href="{{$featuredCourse->url}}"
+                                                                                style="color: black!important;">{{$featuredCourse->title}}</a>
+                                                                        </h5>
                                                                         <hr>
 
-                                                                                <a
-                                                                                    class="button"
-                                                                                    href="{{$featuredCourse->url}}" style="color: white!important;margin: 0 25%;">جزئیات و ثبت نام</a>
-
-
-
-
-
+                                                                        <a
+                                                                            class="button"
+                                                                            href="{{$featuredCourse->url}}"
+                                                                            style="color: white!important;margin: 0 25%;">جزئیات
+                                                                            و ثبت نام</a>
 
 
                                                                     </div>
