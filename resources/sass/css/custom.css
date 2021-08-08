@@ -1,0 +1,1805 @@
+@import "/vendor/mehr4-theme-danesh/css/fontiran.min.css";
+
+body {
+    font-family: iranyekan, sans-serif !important
+}
+
+a, body, div, h1, h2, h3, h4, h5, h6, li, nav, p, span, ul {
+    font-family: iranyekan, sans-serif !important
+}
+
+#Subheader .title, .offer_li .title h3, .timeline_items li h3 span, body, button, input[type=button], input[type=email], input[type=password], input[type=reset], input[type=submit], input[type=tel], input[type=text], select, span.date_label, textarea {
+    font-family: iranyekan, sans-serif !important
+}
+
+#Top_bar .top_bar_left {
+    position: relative;
+    float: right
+}
+
+#Top_bar .logo {
+    float: right !important;
+    margin: 0 30px 0 20px
+}
+
+@media only screen and (min-width: 1240px) {
+    .menuo-right #Top_bar .menu_wrapper {
+        float: right !important;
+        margin-right: 4rem
+    }
+}
+
+#Top_bar .logo {
+    float: right;
+    margin: 0 30px 0 20px
+}
+
+#Top_bar .menu > li {
+    margin: 0;
+    z-index: 203;
+    display: block;
+    float: right !important
+}
+
+.mcb-wrap {
+    float: right !important
+}
+
+.column, .columns {
+    float: right !important
+}
+
+.course-title {
+    text-align: right;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    direction: rtl
+}
+
+p.course-text {
+    text-align: justify !important;
+    line-height: 1.99rem;
+    margin-top: 4rem;
+    direction: rtl
+}
+
+p.adv-text {
+    text-align: justify !important;
+    line-height: 3.99rem;
+    margin-top: 2rem;
+    direction: rtl;
+    font-size: .99rem;
+    color: #000
+}
+
+img#pointer {
+    text-align: center !important
+}
+
+.slider-slogan {
+    font-size: 3.625rem;
+    font-weight: 600
+}
+
+@media only screen and (max-width: 425px) {
+    .slider-slogan {
+        font-size: 1.625rem;
+        font-weight: 600
+    }
+
+    .text1-footer {
+        font-weight: 500;
+        line-height: 3rem;
+        direction: rtl;
+        float: right;
+        text-align: right;
+        font-size: .99rem
+    }
+}
+
+h2.h2-title {
+    font-size: 3rem;
+    line-height: 6rem;
+    font-weight: 500;
+    margin-top: 3rem
+}
+
+h1.title-course-page {
+    font-size: 1rem !important
+}
+
+.button-flat a.button_right.button .button_label, .button-flat a.button_right.button_large .button_label {
+    padding-right: 17px !important
+}
+
+h4.course-title-sec1 {
+    font-size: 1rem !important;
+    letter-spacing: 0 !important;
+    text-align: right;
+    direction: rtl
+}
+
+.flat_box .desc_wrapper {
+    margin-left: 1px !important
+}
+
+.equal-height-wrap .mcb-wrap.valign-middle .mcb-wrap-inner {
+    top: 62% !important;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+a.button, a.tp-button {
+    background-color: #fff !important
+}
+
+.depart-title {
+    letter-spacing: 0 !important;
+    direction: rtl;
+    text-align: center;
+    font-size: 1.2rem
+}
+
+a:hover {
+    gitinittext-decoration: none !important
+}
+
+.shop_slider .shop_slider_ul li .item_wrapper .desc {
+    background: 0 0;
+    padding: 15px 20px;
+    float: unset;
+    text-align: center !important
+}
+
+.amount {
+    font-size: 1rem;
+    color: #444
+}
+
+h4.post-title {
+    letter-spacing: 0 !important
+}
+
+.shop_slider .slider_pagination {
+    margin-top: 15px;
+    margin-bottom: 14px
+}
+
+.helper .helper_header .links a.link {
+    color: white !important;
+    background: #ea2333 !important;
+    border: 1px #ea2333 solid !important;
+    padding: 0 29px !important
+}
+
+.helper .helper_header .links a.link:hover {
+    background-color: grya
+}
+
+.helper .helper_header .title {
+    margin: 0;
+    line-height: 35px;
+    letter-spacing: 0;
+    float: left;
+    font-size: 1.2rem
+}
+
+.shop_slider .shop_slider_ul li .item_wrapper .desc h4 {
+    direction: rtl
+}
+
+#Footer .widgets_wrapper .column {
+    text-align: right !important;
+    direction: ltr
+}
+
+.slogen-footer {
+    font-weight: 600;
+    font-size: 1.2rem
+}
+
+i.icon-layout {
+    float: right !important
+}
+
+h4 {
+    font-weight: 700;
+    letter-spacing: 0 !important
+}
+
+a:hover {
+    text-decoration: none !important
+}
+
+.text-about {
+    text-align: justify !important;
+    font-size: .9rem !important;
+    color: #000;
+    line-height: 3rem
+}
+
+.about-title {
+    text-align: center
+}
+
+.address {
+    text-align: right;
+    padding: .5rem
+}
+
+.address-text {
+    text-align: right;
+    direction: rtl;
+    color: #000;
+    line-height: 2rem;
+    font-size: .9rem;
+    padding-top: 19px
+}
+
+.title-main-course {
+    color: #000 !important;
+    color: #fff !important;
+    float: right;
+    font-size: 2rem !important
+}
+
+.category-title {
+    font-size: 12px;
+    color: #8c1818;
+    padding: 3px;
+    background: #eee;
+    border-radius: 4px;
+    float: right
+}
+
+h4.course-title1 {
+    text-align: right
+}
+
+.course-text1 {
+    text-align: justify;
+    color: #000;
+    font-size: .9rem;
+    line-height: 1.6rem;
+    margin: 0
+}
+
+a.button, a.tp-button {
+    background-color: red !important;
+    color: #fff
+}
+
+a.button .button_icon1 {
+    display: block;
+    float: left;
+    background: #cacaca7d;
+    padding: 11px 13px;
+    cursor: auto;
+    color: #cacaca
+}
+
+span.next {
+    color: #fff
+}
+
+h1.blog-title {
+    color: #fff !important;
+    float: right;
+    font-size: 3rem !important
+}
+
+.article_box .photo_wrapper {
+    width: 50%;
+    float: right;
+    line-height: 0
+}
+
+.article_box .desc_wrapper {
+    width: 50%;
+    min-height: 139px;
+    float: right;
+    padding: 10px 15px;
+    background-color: #f8f8f8;
+    box-sizing: border-box
+}
+
+.article_box .desc_wrapper h4 {
+    margin-bottom: 5px;
+    text-align: right;
+    font-size: 1rem
+}
+
+.style-simple .article_box .desc_wrapper p {
+    border-bottom-width: 0;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    text-align: right;
+    border-bottom-width: 0;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    text-align: right
+}
+
+.article_box .desc_wrapper h4 {
+    margin-bottom: 5px;
+    text-align: right;
+    font-size: .88rem
+}
+
+.post-excerpt {
+    margin-bottom: 15px;
+    float: right;
+    text-align: justify;
+    direction: rtl;
+    color: #000
+}
+
+h2.entry-title {
+    text-align: center;
+    direction: rtl;
+    font-size: 1.5rem
+}
+
+#Filters .filters_buttons li.reset {
+    float: left;
+    margin-right: 17px
+}
+
+#Filters .filters_buttons li {
+    float: right;
+    margin-right: 15px
+}
+
+.style-simple #Filters .filters_wrapper ul li {
+    float: right
+}
+
+#Filters .filters_wrapper ul li.close a {
+    background: #8b8b8b0f
+}
+
+body:not(.template-slider) #Content {
+    padding-top: 0
+}
+
+.page-content {
+    color: #000;
+    text-align: justify;
+    font-size: 1.1rem;
+    line-height: 2.1rem
+}
+
+#Intro .intro-title {
+    font-size: 2.2rem;
+    line-height: 70px;
+    direction: rtl
+}
+
+.post-section {
+    padding-top: 10px;
+    padding-bottom: 0
+}
+
+.post-title-blog {
+    text-align: center !important
+}
+
+.cats li {
+    text-align: right !important;
+    margin-right: 1rem
+}
+
+a.button .button_icon1 {
+    display: block;
+    float: left;
+    background: #cacaca7d;
+    padding: 11px 13px;
+    cursor: auto;
+    color: #cacaca
+}
+
+a.button, a.tp-button {
+    background-color: #121d5e !important;
+    color: #fff
+}
+
+#Intro .intro-title {
+    font-size: 2.3rem !important;
+    line-height: 36px;
+    font-weight: 400;
+    letter-spacing: 0
+}
+
+.with_aside .sections_group {
+    float: right !important;
+    text-align: justify !important;
+    direction: rtl !important
+}
+
+.widget:after {
+    border: none !important
+}
+
+body:not(.template-slider) .widget-area {
+    margin-top: 1px !important
+}
+
+.cats li {
+    text-align: right !important;
+    margin-right: 1rem
+}
+
+.aside_right .widget-area {
+    padding-right: 1px !important
+}
+
+.container, .section_wrapper {
+    direction: rtl !important
+}
+
+p.desc-post {
+    text-align: justify !important;
+    margin: 1rem !important;
+    color: #000;
+    line-height: 1.9rem
+}
+
+h3.post-title {
+    text-align: right !important
+}
+
+.author-title {
+    text-align: center;
+    color: #000 !important
+}
+
+.author-img {
+    text-align: center !important
+}
+
+.author-box .desc-wrapper {
+    background: 0 0 !important
+}
+
+.thumb {
+    border-radius: 58%;
+    width: 75%
+}
+
+p.p-com {
+    font-size: 1rem;
+    line-height: 2rem;
+    padding-top: 1rem;
+    color: #000
+}
+
+.post-section {
+    padding-top: 60px;
+    padding-bottom: 0
+}
+
+.column_column ul li, .column_helper ul li, .column_visual ul li, .mfn-acc ul li, .post-excerpt ul li, .the_content_wrapper ul li, .ui-tabs-panel ul li {
+    list-style: none outside !important
+}
+
+.sec-course {
+    padding-top: 65px !important
+}
+
+.image-course {
+    border-radius: 1rem !important
+}
+
+.post-title-blog {
+    text-align: center !important
+}
+
+#Intro .intro-meta, #Intro .intro-meta a {
+    color: #fff !important;
+    font-weight: 500 !important;
+    font-size: 1.1rem
+}
+
+a.contact-title {
+    color: #fff !important
+}
+
+a.mail {
+    color: #fff !important
+}
+
+a.socail {
+    color: #000 !important;
+    font-size: 2rem;
+    text-align: center
+}
+
+.team.team_vertical {
+    text-align: center !important
+}
+
+#contactWrapper .column {
+    width: 82% !important
+}
+
+.em {
+    width: 80% !important
+}
+
+.sidebar.sidebar-1.four.columns {
+    margin-top: 3% !important
+}
+
+.get_in_touch, .infobox {
+    background-color: #f7f7f7 !important
+}
+
+.get_in_touch, .get_in_touch a, .get_in_touch h3, .get_in_touch ul, .infobox, .infobox a, .infobox h3, .infobox ul {
+    color: #000 !important;
+    text-align: center !important;
+    margin-top: 0;
+    font-size: 1.1rem;
+    direction: rtl
+}
+
+.get_in_touch ul li {
+    margin: 5px;
+    list-style: none;
+    position: relative;
+    padding: 15px 3px 9px;
+    word-wrap: break-word;
+    margin-bottom: 6px
+}
+
+.icon_box.has_border:after {
+    display: none !important
+}
+
+.span1 {
+    width: 100%;
+    height: 2px;
+    background-color: rgba(0, 0, 0, .03);
+    display: block;
+    text-align: center
+}
+
+.get_in_touch {
+    padding: 12px 12px 19px 15px;
+    background-repeat: no-repeat;
+    background-position: right bottom
+}
+
+h2.cat-title {
+    text-align: center !important
+}
+
+@media only screen and (max-width: 1239px) {
+    #Top_bar #menu ul li.submenu .menu-toggle {
+        width: 48px;
+        height: 48px;
+        display: block;
+        position: absolute;
+        float: left !important;
+        top: 0;
+        border-left: 1px solid rgba(0, 0, 0, .03)
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .title-main-course {
+        color: #fff !important;
+        float: right;
+        font-size: 1rem !important
+    }
+}
+
+h2.h2-title {
+    font-size: 2rem !important;
+    line-height: 1.5rem;
+    margin-top: 2.5rem;
+    font-weight: 500;
+    text-align: center
+}
+
+@media only screen and (width: 1024px) {
+    #Top_bar .logo {
+        float: left !important;
+        margin: 0 67px -15px 23px
+    }
+}
+
+@media only screen and (width: 768px) {
+    #Top_bar .logo {
+        float: left !important;
+        margin: 0 67px -15px 23px
+    }
+
+    div#slide-1-layer-3 {
+        margin: -33px !important
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #Top_bar #logo img.logo-main {
+        display: block;
+        float: right
+    }
+
+    #Top_bar .menu > li ul {
+        background-color: #f2f2f23b
+    }
+
+    #Top_bar .logo #logo {
+        padding: 11px !important;
+        float: left
+    }
+
+    #Top_bar .top_bar_left {
+        margin-top: 0
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    h5 {
+        font-size: 1rem;
+        line-height: 19px
+    }
+
+    .thumb {
+        border-radius: 58% !important;
+        width: 44% !important
+    }
+
+    .widget input {
+        text-align: center !important;
+        margin: auto;
+        width: 83%;
+        padding-bottom: 9px;
+        margin-bottom: 14px
+    }
+}
+
+@media only screen and (max-width: 786px) {
+    #Subheader .title {
+        font-size: 1.5rem !important
+    }
+
+    .h2-title {
+        font-size: 1.5rem !important
+    }
+
+    p.p-com {
+        font-size: .9rem;
+        line-height: 2rem;
+        padding-top: 1rem;
+        text-align: justify
+    }
+
+    #Subheader {
+        padding: 1px 0 !important;
+        text-align: center
+    }
+}
+
+#Subheader-auth {
+    padding: 25px 0 !important;
+    text-align: center
+}
+
+.style-simple .accordion .question .title {
+    background: #f2f5f9;
+    border: 1px #eaedf1cf solid;
+    margin: 1rem
+}
+
+.accordion .question.active .title {
+    border-width: 0 0 1px;
+    font-size: 18px !important
+}
+
+.avatar {
+    text-align: center !important
+}
+
+#Filters .filters_wrapper ul li {
+    float: right;
+    width: 49%;
+    margin: .5%
+}
+
+@media only screen and (max-width: 767px) {
+    .minimalist-header-no #Subheader {
+        padding: 19px 3px !important
+    }
+
+    a.pas-forget {
+        display: block !important;
+        margin-top: 1.9rem !important
+    }
+
+    .team.team_vertical {
+        text-align: center !important;
+        margin-top: 3rem !important
+    }
+
+    #Intro .intro-title {
+        font-size: 1.5rem !important;
+        line-height: 38px !important;
+        font-weight: 500;
+        letter-spacing: 0
+    }
+}
+
+@media only screen and (max-width: 1239px) {
+    #Top_bar #menu ul li.submenu .menu-toggle {
+        right: 82% !important
+    }
+}
+
+.button-flat a.button .button_icon {
+    color: #fff !important
+}
+
+a.button .button_label {
+    color: #f2f5f9 !important;
+    font-weight: 700
+}
+
+.woocommerce .quantity input.qty, input[type=date], input[type=email], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=url], select, textarea {
+    background-color: #f2f4f7;
+    border-color: #312a2a30
+}
+
+.contact-head {
+    padding-top: 110px;
+    padding-bottom: 0
+}
+
+h1.title-course-page {
+    color: #fff !important;
+    float: right;
+    font-size: 2rem !important
+}
+
+.column_blog {
+    margin-top: 1rem !important
+}
+
+.course-text {
+    text-align: justify !important;
+    margin: 1rem !important;
+    color: #000;
+    line-height: 1.9rem
+}
+
+a.video {
+    color: #000
+}
+
+.query-title {
+    text-align: center;
+    padding: 2%;
+    color: #fff;
+    font-size: 2rem
+}
+
+h2.cat-title {
+    text-align: center;
+    margin: 5%;
+    padding: 2%;
+    color: #fff;
+    font-size: 2.3rem
+}
+
+.title-page {
+    color: #fff !important;
+    float: right;
+    font-size: 2.8rem !important
+}
+
+input[type=date]:focus, input[type=email]:focus, input[type=number]:focus, input[type=password]:focus, input[type=search]:focus, input[type=tel]:focus, input[type=text]:focus, input[type=url]:focus, select:focus, textarea:focus {
+    color: #000;
+    background-color: #f2f4f7 !important;
+    border-color: #3b588436
+}
+
+.title-reg {
+    font-size: 1.5rem
+}
+
+#contactWrapper .column {
+    margin-bottom: 8px !important
+}
+
+.title-about {
+    color: #fff !important;
+    float: right;
+    font-size: 2.8rem !important
+}
+
+@media only screen and (max-width: 1239px) {
+    #Top_bar #menu {
+        display: none;
+        height: auto;
+        width: 100%;
+        bottom: auto;
+        top: 100%;
+        position: absolute;
+        margin: auto
+    }
+}
+
+.sec1-padding {
+    padding-top: 60px;
+    padding-bottom: 60px
+}
+
+@media only screen and (max-width: 768px) {
+    .sec1-padding {
+        padding-top: 60px;
+        padding-bottom: 60px
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    .depart-title {
+        font-size: .7rem
+    }
+
+    .course-title {
+        text-align: center;
+        font-size: 1.8rem;
+        line-height: 1.2;
+        direction: rtl
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    a.title-blog-home {
+        font-size: 1.2rem
+    }
+
+    .query-title {
+        text-align: center;
+        margin: 5%;
+        padding: 2%;
+        color: #fff;
+        font-size: .99rem;
+        line-height: 3rem;
+        font-weight: 500
+    }
+
+    h2.cat-title {
+        text-align: center;
+        margin: 5%;
+        padding: 0;
+        color: #fff;
+        font-size: .99rem;
+        line-height: 2rem;
+        font-weight: 500
+    }
+}
+
+.image_wrapper.adv-img {
+    height: 1rem !important
+}
+
+.adv-sec {
+    padding-top: 1px !important
+}
+
+@media only screen and (max-width: 479px) {
+    h4 {
+        font-size: 22px;
+        line-height: 19px
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    h1.title-course-page {
+        font-size: 1rem !important;
+        margin: 20%;
+        line-height: 2rem
+    }
+
+    .cats li {
+        text-align: center !important
+    }
+
+    .contact-head {
+        padding-top: 30px;
+        padding-bottom: 0
+    }
+
+    .get_in_touch, .get_in_touch a, .get_in_touch h3, .get_in_touch ul, .infobox, .infobox a, .infobox h3, .infobox ul {
+        padding: 12px
+    }
+
+    .widget {
+        text-align: center !important
+    }
+
+    .contact-title {
+        font-size: 1rem
+    }
+
+    .title-about {
+        font-size: 1.5rem !important
+    }
+
+    .title-reg {
+        font-size: .99rem
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .grid .post-item, .masonry .post-item {
+        width: 98% !important;
+        margin: 0 1% 20px !important
+    }
+
+    .image_wrapper.adv-img {
+        height: 1rem !important
+    }
+}
+
+.blog_slider .blog_slider_ul li .item_wrapper hr {
+    margin: 30px;
+    width: 70%
+}
+
+.desc1 {
+    text-align: center
+}
+
+h5.desc1 {
+    color: #000
+}
+
+.adv-sec {
+    padding-top: 100px
+}
+
+@media only screen and (max-width: 1024px) {
+    .sec-adv {
+    }
+
+    i.icon-layout {
+        display: none !important
+    }
+}
+
+@media only screen and (min-width: 426px) {
+    .text1-footer {
+        font-weight: 800;
+        line-height: 3rem;
+        direction: rtl;
+        float: right;
+        text-align: right
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .sub-course {
+    }
+
+    .image_wrapper.adv-img {
+        height: 16rem !important
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .sub-blog {
+        background-color: #000
+    }
+
+    .page-head {
+        background-color: #02381d !important
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .sub-blog {
+    }
+}
+
+body.nice-scroll:not(.layout-boxed) {
+    padding-right: 0 !important
+}
+
+.tags a:hover {
+    background-color: #ff57221f !important;
+    color: #fff
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 10000
+}
+
+.modal-content {
+    margin: 15% auto;
+    padding: 20px;
+    z-index: 10 !important;
+    position: relative;
+    z-index: 10000
+}
+
+.close:focus, .close:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer
+}
+
+@media only screen and (max-width: 768px) {
+    .video {
+        width: 80%;
+        z-index: 10000
+    }
+
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: 700;
+        width: 19%
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .video {
+        width: 50%;
+        flex-direction: column
+    }
+
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: 700;
+        width: 51%
+    }
+
+    #Subheader {
+        padding: 37px 0 !important;
+        text-align: center
+    }
+}
+
+.blog_slider .blog_slider_ul li .item_wrapper a.button {
+    margin-left: -8px;
+    margin-bottom: 0
+}
+
+.section.mcb-section.sec1 {
+    padding-top: 8px;
+    padding-bottom: 1px;
+    background-color: #f2f5f9
+}
+
+p.about-text {
+    color: #000;
+    text-align: justify;
+    padding-left: 23px;
+    line-height: 1.9rem
+}
+
+p.p-course {
+    text-align: justify;
+    margin: 8px 22px 19px;
+    line-height: 1.8rem;
+    color: #000000bf
+}
+
+.title-courese-home {
+    font-size: 2.5rem
+}
+
+.categories-title {
+    font-size: .99rem
+}
+
+.course-home {
+    padding-top: 37px;
+    padding-bottom: 80px;
+    background-color: #f2f5f9
+}
+
+.last-blog {
+    text-align: justify;
+    color: #000;
+    line-height: 1.8rem
+}
+
+h2.title {
+    text-align: center
+}
+
+.contact-photo {
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.contact-page {
+    padding-top: 185px;
+    padding-bottom: 1px;
+    background-repeat: no-repeat;
+    background-position: center top
+}
+
+.about-page {
+    padding-top: 185px;
+    padding-bottom: 1px;
+    background-repeat: no-repeat;
+    background-position: center top
+}
+
+.course-page {
+    padding-top: 185px;
+    padding-bottom: 1px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-color: #f1f6f9
+}
+
+.header-page {
+    padding-top: 185px;
+    padding-bottom: 1px;
+    background-repeat: no-repeat;
+    background-position: center top
+}
+
+.blog-page {
+    padding-top: 185px;
+    padding-bottom: 1px;
+    background-repeat: no-repeat;
+    background-position: center top
+}
+
+.login-header {
+    padding-top: 185px;
+    padding-bottom: 1px;
+    background-repeat: no-repeat;
+    background-position: center top
+}
+
+.register-header {
+    padding-top: 185px;
+    padding-bottom: 1px;
+    background-repeat: no-repeat;
+    background-position: center top
+}
+
+p.content-about {
+    text-align: justify;
+    color: #000
+}
+
+.contact-page {
+    text-align: justify;
+    margin-top: 1rem
+}
+
+.content-page {
+    direction: rtl;
+    text-align: justify;
+    color: #000;
+    line-height: 2.3rem;
+    padding: 5rem;
+    float: right
+}
+
+#back_to_top {
+    border-radius: 8px
+}
+
+#Top_bar .menu li ul li {
+    width: 211px;
+    font-size: .88em
+}
+
+input#submit-newsletter {
+    border-top-right-radius: 0;
+    margin-right: -19%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 10px
+}
+
+input#email_newsletter {
+    padding: 13px 70px;
+    width: 54%;
+    -webkit-border-radius: 7px;
+    border-color: -internal-light-dark-color(rgb(118, 118, 118), rgb(195, 195, 195));
+    -webkit-border-color: -internal-light-dark-color(rgb(118, 118, 118), rgb(195, 195, 195)) !important;
+    border-color: #8080800a;
+    color: #000;
+    text-align: center
+}
+
+div#services {
+    padding-top: 120px;
+    background-repeat: no-repeat;
+    background-position: center top
+}
+
+.button-flat a.button:not(.action_button), .button-flat:not(.header-plain) a.button.action_button, .button-flat a.tp-button, .button-flat button, .button-flat input[type="submit"], .button-flat input[type="reset"], .button-flat input[type="button"] {
+    border-radius: 7px
+}
+
+.thumb {
+    width: 43px;
+    height: 42px;
+    border-radius: 48%;
+    margin-left: 9px;
+    margin-top: -10px;
+    margin-bottom: 0;
+    float: right
+}
+
+h5.h5comments {
+    color: #000
+}
+
+.style-simple .get_in_touch {
+    padding: 0
+}
+
+.about-us {
+    padding: 40px 10% 0 0
+}
+
+.last-blog-home {
+    padding: 0 0 0 10%
+}
+
+#last-blog {
+    padding-top: 44px;
+    padding-bottom: 0;
+    background-color: #e9eef5;
+    background-repeat: no-repeat;
+    background-position: center top
+}
+
+#moshavere {
+    padding-top: 120px;
+    padding-bottom: 0;
+    background: #fff
+}
+
+.dark {
+    padding-top: 184px;
+    padding-bottom: 17px;
+    background-color: #303337;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.team-section {
+    padding-top: 110px;
+    padding-bottom: 140px;
+    background-color: #ececec
+}
+
+hr.no_line.hr-team {
+    margin: 0 auto 80px
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+    .column.mcb-column.mcb-item-jckfmmnuu.two-third.column_image {
+        width: 100%
+    }
+
+    img.scale-with-grid.blog-home-pic {
+        width: 100%
+    }
+
+    .last-blog-home {
+        padding: 0
+    }
+
+    .column.mcb-column.mcb-item-sd3d67h7c.one-third.column_column {
+        width: 100%
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    div#services {
+        padding-top: 24px;
+        background-repeat: no-repeat;
+        background-position: center top;
+        text-align: center
+    }
+
+    .get_in_touch, .get_in_touch a, .get_in_touch h3, .get_in_touch ul, .infobox, .infobox a, .infobox h3, .infobox ul {
+        color: #000 !important;
+        text-align: center !important;
+        margin-top: 0;
+        font-size: .9rem;
+        direction: rtl;
+        padding: 8px;
+        margin-bottom: 2rem
+    }
+
+    .get_in_touch ul li {
+        margin: 0;
+        list-style: none;
+        position: relative;
+        padding: 12px 2px 7px 0;
+        word-wrap: break-word;
+        margin-bottom: 3px;
+        font-size: .9rem
+    }
+
+    #contactWrapper .column {
+        width: 100% !important
+    }
+
+    #Intro .intro-meta, #Intro .intro-meta a {
+        color: #fff !important;
+        font-weight: 500 !important;
+        font-size: .8rem
+    }
+
+    #Intro .intro-title {
+        font-size: 1.5rem !important;
+        line-height: 36px;
+        font-weight: 400;
+        letter-spacing: 0
+    }
+
+    .about-us {
+        padding: 0 4% 0 0
+    }
+
+    .helper .helper_header .title {
+        margin: 0;
+        line-height: 35px;
+        letter-spacing: 0;
+        float: left;
+        font-size: .8rem
+    }
+
+    #moshavere {
+        padding-top: 33px !important;
+        padding-bottom: 0 !important;
+        background: #fff
+    }
+}
+
+.section.mcb-section.sectionbg3 {
+    padding-top: 130px;
+    padding-bottom: 90px;
+    background-repeat: no-repeat;
+    background-position: center top
+}
+
+.footer1, footer2, footer3 {
+    background-color: #000c;
+    padding: 50px 15% 35px;
+    border-radius: 30px;
+    height: 20rem
+}
+
+.about-section2 {
+    padding-top: 5px;
+    padding-bottom: 68px
+}
+
+.about-section {
+    padding: 6px 52px 89px 8%
+}
+
+@media only screen and (max-width: 425px) {
+    p.p-course {
+        text-align: justify;
+        margin: 5px 14px -23px;
+        line-height: 1.8rem;
+        color: #000000bf
+    }
+
+    .contact-page {
+        padding-top: 146px;
+        padding-bottom: 15px
+    }
+
+    h5.address {
+        font-size: 1rem;
+        line-height: 1.6rem;
+        text-align: justify
+    }
+
+    .about-page {
+        padding-top: 146px;
+        padding-bottom: 15px
+    }
+
+    .section.mcb-section.sectionbg3 {
+        padding-top: 33px;
+        padding-bottom: 37px;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-color: #019bdb;
+        background-image: none
+    }
+
+    hr.no_line.hr-team {
+        margin: 0 auto 2px
+    }
+
+    .team-section {
+        padding-top: 50px;
+        padding-bottom: 140px;
+        background-color: #ececec
+    }
+
+    .footer1, footer2, footer3 {
+        background-color: #1b1c4a;
+        padding: 50px 15% 35px;
+        border-radius: 30px;
+        height: 20rem;
+        margin: 6%
+    }
+
+    .about-section {
+        padding: 0;
+        text-align: justify
+    }
+
+    .about-section2 {
+        padding-top: 22px;
+        padding-bottom: 9px
+    }
+
+    .about-page-pic {
+        margin-bottom: 6rem
+    }
+
+    #last-blog {
+        padding-top: 38px;
+        padding-bottom: 10px;
+        background-color: #e9eef5;
+        background-repeat: no-repeat;
+        background-position: center top
+    }
+
+    .last-blog-home {
+        padding: 27px 3px 3px 2%
+    }
+
+    input#submit-newsletter {
+        border-radius: 10px;
+        margin-right: 1%;
+        padding: 2%;
+        width: 97%
+    }
+
+    .dark {
+        padding-top: 150px;
+        padding-bottom: 21px;
+        background-color: #303337;
+        background-repeat: no-repeat;
+        background-position: center
+    }
+
+    div#slide-1-layer-3 {
+        margin: -25px !important
+    }
+
+    .course-page {
+        padding-top: 146px
+    }
+
+    .blog-page {
+        padding-top: 146px
+    }
+
+    .login-header {
+        padding-top: 146px;
+        padding-bottom: 15px
+    }
+
+    .register-header {
+        padding-top: 146px
+    }
+
+    about-page {
+        padding-top: 134px
+    }
+}
+
+#Top_bar #logo, .header-fixed #Top_bar #logo, .header-plain #Top_bar #logo, .header-transparent #Top_bar #logo {
+    height: 60px;
+    line-height: 60px;
+    padding: 15px 0;
+    box-sizing: content-box !important
+}
+
+.button.button_js.slider_prev.disbutton {
+    cursor: default !important
+}
+
+.item-course {
+    font-size: .99rem
+}
+
+.search-wrapper input.search {
+    outline: none;
+    border-radius: 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom-color: currentcolor;
+    border-bottom-style: none;
+    border-bottom-width: medium;
+    border-bottom: 4px solid #121d5e;
+    font-size: 14px;
+    line-height: 33px;
+    padding: 6px 15px;
+    width: 99%;
+    background-size: auto !important;;
+    background-size: 15px !important
+}
+
+.header-classic #Top_bar .top_bar_right {
+    top: 1rem
+}
+
+.text-counter {
+    font-size: 22px
+}
+
+#Header .secondary-menu > li > a {
+    display: block
+}
+
+#Header .secondary-menu > li > a:hover {
+    text-decoration: none
+}
+
+#Header .secondary-menu li ul {
+    position: absolute;
+    left: 0px !important;
+    padding: 7px;
+    top: 100%;
+    z-index: 223;
+    margin: 0;
+    display: none;
+    -webkit-border-radius: 0 4px 4px 4px;
+    border-radius: 0 4px 4px 4px;
+    color: red
+}
+
+.secondary-menu.last-item {
+    color: red;
+    float: left !important
+}
+
+.secondary-menu-ul {
+    float: left !important;
+    left: 200px !important
+}
+
+.page-margin {
+    margin-top: 60px
+}
+
+#Top_bar .menu li ul {
+    left: -129px !important
+}
+
+#menu-item-1334 {
+    width: 210px !important
+}
+
+.blog_slider.flat .blog_slider_header a.button.slider_prev, .blog_slider.flat .blog_slider_header a.button.slider_next {
+    background-color: rgba(255, 255, 255, .04) !important
+}
+
+.customer.scale-with-grid.wp-post-image {
+    text-align: center !important
+}
+
+#post-2287 {
+    margin: auto;
+    width: 100%
+}
+
+.image_frame .image_wrapper .image_links, .portfolio_group.masonry-hover .portfolio-item .masonry-hover-wrapper .hover-desc {
+    background: rgba(234, 35, 52, .37) !important
+}
+
+.price {
+    color: #000;
+    font-size: 1.3rem
+}
+
+.title-course {
+    font-size: 19px;
+    line-height: 25px;
+    padding: 1rem;
+    margin: 0
+}
+
+.button-flat a.button:not(.action_button), .button-flat:not(.header-plain) a.button.action_button, .button-flat a.tp-button, .button-flat button, .button-flat input[type="submit"], .button-flat input[type="reset"], .button-flat input[type="button"] {
+    box-shadow: none;
+    -webkit-appearance: none;
+    margin: .2rem
+}
+
+#item-container {
+    background-color: #fff;
+    padding: 30px 30px 15px;
+    border-radius: 30px;
+    height: 476px
+}
+
+#header-course {
+    direction: rtl;
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    font-size: 25px
+}
+
+.similarcourse-title {
+    font-size: 19px;
+    line-height: 25px !important;
+    padding-top: 2rem !important;
+    margin: 0
+}
+
+.discount {
+    border-bottom: 3px #e5e5e5 solid;
+    padding: .66rem;
+    color: gray
+}
+
+#submenu-level2 {
+    margin-left: -139px !important
+}
+.img-slider-res{
+    height: auto;
+    max-width: 100%;
+    display: none;
+}
+#Top_bar .menu > li > a span:not(.description) {
+    padding: 0 12px;
+}
+
+#Top_bar .menu li ul li a .menu-arrow {
+    left: 7px !important;
+}
+
+.center-button-home {
+    width: 60%;
+    margin: auto;
+}
+
+.center-title {
+    text-align: center;
+}
+
+h4.course-title-sec1 {
+    font-size: 1rem !important;
+    letter-spacing: 0 !important;
+    text-align: center;
+}
+
+.head-packege hr {
+    margin-top: -35px;
+    background: #ffc600;
+    height: 0.1rem;
+}
+
+.section-coursefeature {
+    background-color: #f2f5f9;
+    text-align: center;
+    display: inline-block;
+    padding: 0 26px;
+}
+
+.footer1, footer2, footer3 {
+    background-color: white;
+    padding: 0 12% 31px;
+    padding-top: 0;
+    padding-right: 12%;
+    padding-bottom: 31px;
+    padding-left: 12%;
+    border-radius: 30px;
+    height: 27rem;
+}
+
+.black {
+    color: black;
+}
+
+.course-inner-div {
+    position: absolute;
+    bottom: 7px;
+    right: 0;
+    left: 0;
+    text-align: center;
+}
+
+.course-list-outer-div {
+    position: relative;
+}
+
+.course-item-img {
+    border-radius: 1rem !important;
+}
+
+.register-button{
+    padding: 10px 25px 10px 25px !important;
+}
+
+
+@media screen and (max-width: 1020px) {
+    /*.sticky-top {*/
+    /*    display: none !important;*/
+    /*}*/
+    .sticky-top{
+        z-index: 1020;
+        top: 0;
+        position: sticky;
+    }
+
+    .position-sticky{
+        position: sticky!important;
+    }
+
+}
+@media screen and (min-width: 426px) {
+
+    .mobile-show{
+       display: none;
+    }
+}
+@media screen and (max-width: 426px) {
+
+    .mobile-not-show{
+       display: none;
+    }
+}
+
+.course-sidebar ul li{
+    padding: 9px 3px;
+}
+
+.course-sidebar{
+    border-radius: 5px;
+}
+
+
+
+
+@media screen and (min-width: 1400px ) {
+    .category-course{
+        margin:0px 50px 50px 50px
+    }
+}
+
+@media screen and (max-width: 1399px ) {
+    .category-course{
+        margin:10px 10px 10px 10px
+    }
+}
+.category-course{
+    margin-bottom:10px!important;
+}
+
+.about-item{
+    color: #000;
+}
+
+

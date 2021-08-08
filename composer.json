@@ -1,0 +1,44 @@
+{
+    "name": "dpsoft/mehr4-theme-danesh",
+    "description": "A minimal theme for mehr4",
+    "keywords": [
+        "dpsoft",
+        "mehr4-theme-danesh"
+    ],
+    "homepage": "https://github.com/dpsoft/mehr4-theme-danesh",
+    "license": "Apache-2.0",
+    "type": "library",
+    "authors": [
+        {
+            "name": "H-heidari",
+            "email": "info@dpe.ac",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dpsoft\\Mehr4ThemeDanesh\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dpsoft\\Mehr4ThemeDanesh\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dpsoft\\Mehr4ThemeDanesh\\Mehr4ThemeDaneshServiceProvider"
+            ],
+            "aliases": {
+                "Mehr4ThemeDanesh": "Dpsoft\\Mehr4ThemeDanesh\\Mehr4ThemeDaneshFacade"
+            }
+        }
+    }
+}
