@@ -65,7 +65,6 @@
                     <!-- LAYERS -->
                 </li>
                 <!-- SLIDE  -->
-
             </ul>
         </div>
         <!-- END REVOLUTION SLIDER -->
@@ -92,7 +91,7 @@
                                 <div class="mcb-wrap-inner">
                                     <div class="column mcb-column one column_column">
                                         <div class="column_attr clearfix align_center"
-                                             style="background-color:#fff; padding:0 26px;height: 273px;">
+                                             style="background-color:#fff; padding:0 26px;height: 300px;">
                                             <div
                                                 style="width: 100%; height: 5px; background:#dce2e9; border-radius: 0 0 2px 2px"></div>
                                             <hr class="no_line" style="margin:0 auto 20px">
@@ -124,7 +123,7 @@
                                 <div class="mcb-wrap-inner">
                                     <div class="column mcb-column one column_column">
                                         <div class="column_attr clearfix align_center"
-                                             style="background-color:#fff;padding:0 26px;height: 273px;">
+                                             style="background-color:#fff;padding:0 26px;height: 300px;">
                                             <div
                                                 style="width: 100%; height: 5px; background:#dce2e9;border-radius:0 0 2px 2px"></div>
                                             <hr class="no_line" style="margin:0 auto 20px">
@@ -154,7 +153,7 @@
                                 <div class="mcb-wrap-inner">
                                     <div class="column mcb-column one column_column">
                                         <div class="column_attr clearfix align_center"
-                                             style="background-color:#fff;padding:0 26px;height: 273px;">
+                                             style="background-color:#fff;padding:0 26px;height: 300px;">
                                             <div
                                                 style="width: 100%; height: 5px; background:#dce2e9;border-radius:0 0 2px 2px"></div>
                                             <hr class="no_line" style="margin:0 auto 20px">
@@ -182,7 +181,7 @@
                                 <div class="mcb-wrap-inner">
                                     <div class="column mcb-column one column_column">
                                         <div class="column_attr clearfix align_center"
-                                             style="background-color:#fff;padding:0 26px;height: 273px;">
+                                             style="background-color:#fff;padding:0 26px;height: 300px;">
                                             <div
                                                 style="width: 100%; height: 5px; background:#dce2e9;border-radius:0 0 2px 2px"></div>
                                             <hr class="no_line" style="margin:0 auto 20px">
@@ -225,7 +224,7 @@
                                     <div class=""></div>
                                     <div class="column one column_portfolio">
                                         <div class="portfolio_wrapper isotope_wrapper">
-                                            <ul class="portfolio_group lm_wrapper isotope grid col-3"
+                                            <ul class="portfolio_group lm_wrapper isotope grid col-4"
                                                 style="position: relative; height: 1079.77px;">
                                                 @foreach(\Dpsoft\Mehr\Models\Course::all() as $featuredCourse)
                                                     <li class="portfolio-item isotope-item category-artwork category-banner  has-thumbnail"
@@ -233,34 +232,20 @@
                                                         <a href="{{$featuredCourse->url}}">
                                                             <div class="portfolio-item-fw-bg" style="">
                                                                 <div class="portfolio-item-fill"></div>
-                                                                <div class="list_style_header"><h3 class="entry-title"
-                                                                                                   itemprop="headline">
-                                                                        <a
-                                                                            class="link"
-                                                                            href="{{$featuredCourse->url}}">
+                                                                <div class="list_style_header">
+                                                                    <h3 class="entry-title" itemprop="headline">
+                                                                        <a class="link"
+                                                                           href="{{$featuredCourse->url}}">
                                                                             {{$featuredCourse->title}}
-                                                                        </a></h3>
-                                                                    <div class="links_wrapper"><a href="#"
-                                                                                                  class="button the-icon portfolio_prev_js"><span
-                                                                                class="button_icon"><i
-                                                                                    class="icon-up-open"></i></span></a><a
-                                                                            href="#"
-                                                                            class="button the-icon portfolio_next_js"><span
-                                                                                class="button_icon"><i
-                                                                                    class="icon-down-open"></i></span></a><a
-                                                                            href="https://themes.muffingroup.com/betheme/portfolio-item/standard-portfolio/"
-                                                                            class="button button_theme has-icon"><span
-                                                                                class="button_icon"><i
-                                                                                    class="icon-link"></i></span><span
-                                                                                class="button_label">اطلاعات بیشتر و ثبتنام</span></a>
-                                                                    </div>
+                                                                        </a>
+                                                                    </h3>
+
                                                                 </div>
                                                                 <div class="image_frame scale-with-grid">
                                                                     <div class="image_wrapper"><a
                                                                             href="{{$featuredCourse->url}}">
                                                                             <div class="mask"></div>
                                                                             <img width="960" height="720"
-                                                                                 {{--                                                                                 src="https://themes.muffingroup.com/betheme/wp-content/uploads/2020/10/betheme-portfolio-pic1-960x720.jpg"--}}
                                                                                  class="scale-with-grid wp-post-image"
                                                                                  alt=""
                                                                                  loading="lazy"
@@ -270,20 +255,23 @@
                                                                     </div>
                                                                 </div>
                                                                 <div class="desc">
-                                                                    <div class="title_wrapper"><h5 class="entry-title"
-                                                                                                   itemprop="headline">
+                                                                    <div class="title_wrapper">
+                                                                        <h5 class="entry-title" itemprop="headline" style="justify-content: center;display: flex;">
                                                                             <a
                                                                                 class="link"
                                                                                 href="{{$featuredCourse->url}}"
                                                                                 style="color: black!important;">{{$featuredCourse->title}}</a>
                                                                         </h5>
                                                                         <hr>
+                                                                        <div style="justify-content: center;display: flex;">
+                                                                            <a
+                                                                                class="button"
+                                                                                href="{{$featuredCourse->url}}"
+                                                                                style="color: white!important;margin: 0 ;">جزئیات
+                                                                                و ثبت نام</a>
+                                                                        </div>
 
-                                                                        <a
-                                                                            class="button"
-                                                                            href="{{$featuredCourse->url}}"
-                                                                            style="color: white!important;margin: 0 25%;">جزئیات
-                                                                            و ثبت نام</a>
+
 
 
                                                                     </div>

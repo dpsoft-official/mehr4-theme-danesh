@@ -22792,7 +22792,6 @@ body:not(.template-slider) .widget-area {
 }
 .portfolio_group .portfolio-item .desc .title_wrapper {
     position: relative;
-    padding-right: 43px;
 }
 .portfolio_group .portfolio-item .desc .title_wrapper h5 {
     margin-bottom: 0;
