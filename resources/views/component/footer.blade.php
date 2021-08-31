@@ -149,7 +149,7 @@
                                     </a>
                                     <p style="font-size: 15px">کامپیوتر</p>
 
-                                    {!!setting_edit('social-3instagram')!!}
+                                    {!!setting_edit('social-instagram3')!!}
                                 @endif
 
 
