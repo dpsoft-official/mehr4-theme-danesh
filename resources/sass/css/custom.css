@@ -1,4 +1,4 @@
-@import "/vendor/mehr4-theme-danesh/font/fontiran.min.css";
+@import "/vendor/mehr4-theme-danesh/css/fontiran.min.css";
 
 body {
     font-family: iranyekan, sans-serif !important
@@ -1803,3 +1803,13 @@ h4.course-title-sec1 {
 }
 
 
+@media only screen and (min-width: 1240px){
+    .section_wrapper{
+         max-width: 70% !important;
+    }
+}
+.section_wrapper {
+     width: 70%;
+    margin: 0 auto;
+    position: relative;
+}
