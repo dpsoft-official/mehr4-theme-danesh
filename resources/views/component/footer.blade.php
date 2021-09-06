@@ -2,8 +2,7 @@
 
      style="padding-top:1px;background-repeat:repeat-x;background-position:center bottom;background-image:url({{setting('background.footer')}}"
      data-id="#contact">
-    <div class="section_wrapper mcb-section-inner" style="max-width: 90%!important;width: 85%;
-}">
+    <div class="section_wrapper mcb-section-inner" style="max-width: 90%!important;width: 85%;">
         <div class="wrap mcb-wrap mcb-wrap-oncoddvno one-second  valign-top clearfix" style="">
             <div class="mcb-wrap-inner">
                 <div class="column mcb-column mcb-item-r2fypeai6 one column_column"></div>
@@ -48,7 +47,7 @@
                                 {!!setting_edit('footer-link3')!!}
                             @endif
                             @if(setting('footer-link4'))
-                                <li>
+                                <li style="white-space: nowrap">
                                     <i class="icon-left-dir" style="color: #121d5e;"></i>
                                     <a href="{{setting('footer-link4')}}">کمیته راهبری آموزش (وابسته به سازمان بورس و اوراق بهادار)</a>
                                 </li>
