@@ -91,7 +91,7 @@
                                 <div class="mcb-wrap-inner">
                                     <div class="column mcb-column one column_column">
                                         <div class="column_attr clearfix align_center"
-                                             style="background-color:#fff; padding:0 26px;height: 300px;">
+                                             style="background-color:#fff; padding:0 26px;height: 350px;">
                                             <div
                                                 style="width: 100%; height: 5px; background:#dce2e9; border-radius: 0 0 2px 2px"></div>
                                             <hr class="no_line" style="margin:0 auto 20px">
@@ -123,7 +123,7 @@
                                 <div class="mcb-wrap-inner">
                                     <div class="column mcb-column one column_column">
                                         <div class="column_attr clearfix align_center"
-                                             style="background-color:#fff;padding:0 26px;height: 300px;">
+                                             style="background-color:#fff;padding:0 26px;height: 350px;">
                                             <div
                                                 style="width: 100%; height: 5px; background:#dce2e9;border-radius:0 0 2px 2px"></div>
                                             <hr class="no_line" style="margin:0 auto 20px">
@@ -137,10 +137,8 @@
                                                 </div>
                                             </div>
                                             <hr class="no_line" style="margin:0 auto 20px">
-                                            <h4>
-                                                <a href="">{{setting('icon2.title')}}</a>
-                                                {!!setting_edit('icon2.title')!!}
-                                            </h4>
+                                            <h4>{{setting('icon2.title')}}</h4>
+                                            {!!setting_edit('icon2.title')!!}
                                             <hr style=";color:gray;margin:0 auto 20px">
                                             <h6>{{setting('icon2.text')}}</h6>
                                             {!!setting_edit('icon2.text')!!}
@@ -153,7 +151,7 @@
                                 <div class="mcb-wrap-inner">
                                     <div class="column mcb-column one column_column">
                                         <div class="column_attr clearfix align_center"
-                                             style="background-color:#fff;padding:0 26px;height: 300px;">
+                                             style="background-color:#fff;padding:0 26px;height: 350px;">
                                             <div
                                                 style="width: 100%; height: 5px; background:#dce2e9;border-radius:0 0 2px 2px"></div>
                                             <hr class="no_line" style="margin:0 auto 20px">
@@ -167,7 +165,7 @@
                                                 </div>
                                             </div>
                                             <hr class="no_line" style="margin:0 auto 20px">
-                                            <h4><a href="">{{setting('icon3.title')}}</a></h4>
+                                            <h4>{{setting('icon3.title')}}</h4>
                                             {!!setting_edit('icon3.title')!!}
                                             <hr style=";color:gray;margin:0 auto 20px">
                                             <h6>{{setting('icon3.text')}}</h6>
@@ -181,7 +179,7 @@
                                 <div class="mcb-wrap-inner">
                                     <div class="column mcb-column one column_column">
                                         <div class="column_attr clearfix align_center"
-                                             style="background-color:#fff;padding:0 26px;height: 300px;">
+                                             style="background-color:#fff;padding:0 26px;height: 350px;">
                                             <div
                                                 style="width: 100%; height: 5px; background:#dce2e9;border-radius:0 0 2px 2px"></div>
                                             <hr class="no_line" style="margin:0 auto 20px">
@@ -195,7 +193,7 @@
                                                 </div>
                                             </div>
                                             <hr class="no_line" style="margin:0 auto 20px">
-                                            <h4><a href="">{{setting('icon4.title')}}</a></h4>
+                                            <h4>{{setting('icon4.title')}}</h4>
                                             {!!setting_edit('icon4.title')!!}
                                             <hr style=";color:gray;margin:0 auto 20px">
                                             <h6>{{setting('icon4.text')}}</h6>

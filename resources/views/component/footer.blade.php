@@ -2,7 +2,8 @@
 
      style="padding-top:1px;background-repeat:repeat-x;background-position:center bottom;background-image:url({{setting('background.footer')}}"
      data-id="#contact">
-    <div class="section_wrapper mcb-section-inner">
+    <div class="section_wrapper mcb-section-inner" style="max-width: 90%!important;width: 85%;
+}">
         <div class="wrap mcb-wrap mcb-wrap-oncoddvno one-second  valign-top clearfix" style="">
             <div class="mcb-wrap-inner">
                 <div class="column mcb-column mcb-item-r2fypeai6 one column_column"></div>
@@ -19,40 +20,40 @@
                 {{--                        </div>--}}
                 {{--                    </div>--}}
                 <div class="column mcb-column mcb-item-u4tfbgc1t one-third column_column">
-                    <div class="column_attr clearfix footer1" style="text-align: center;color:white;">
+                    <div class="column_attr clearfix footer1" style="text-align: center;color:white;padding-right: 5%;">
                         <h4
                             class="themecolor">
                         </h4>
                         <h4 class="">لینک های مهم</h4>
                         <ul style="line-height: 32px;text-align: right;">
                             @if(setting('footer-link1'))
-                            <li>
-                                <i class="icon-left-dir" style="color: #121d5e;"></i>
-                                <a href="{{setting('footer-link1')}}">سایت وزارت علوم</a>
-                            </li>
+                                <li>
+                                    <i class="icon-left-dir" style="color: #121d5e;"></i>
+                                    <a href="{{setting('footer-link1')}}">وزارت علوم،تحقیقات و فناوری</a>
+                                </li>
                                 {!!setting_edit('footer-link1')!!}
                             @endif
-                                @if(setting('footer-link2'))
-                            <li>
-                                <i class="icon-left-dir" style="color: #121d5e;"></i>
-                                <a href="{{setting('footer-link2')}}">سایت استعلام گواهینامه</a>
-                            </li>
-                                    {!!setting_edit('footer-link2')!!}
-                                @endif
-                                @if(setting('footer-link3'))
-                            <li>
-                                <i class="icon-left-dir" style="color: #121d5e;"></i>
-                                <a href="{{setting('footer-link3')}}">سایت دوره های حضوری</a>
-                            </li>
-                                    {!!setting_edit('footer-link3')!!}
-                                @endif
-                                @if(setting('footer-link4'))
-                            <li>
-                                <i class="icon-left-dir" style="color: #121d5e;"></i>
-                                <a href="{{setting('footer-link4')}}">کمیته راهبری آموزش وابسته به سازمان بورس و اوراق بهادار</a>
-                            </li>
-                                    {!!setting_edit('footer-link4')!!}
-                                @endif
+                            @if(setting('footer-link2'))
+                                <li>
+                                    <i class="icon-left-dir" style="color: #121d5e;"></i>
+                                    <a href="{{setting('footer-link2')}}">استعلام آنلاین گواهینامه</a>
+                                </li>
+                                {!!setting_edit('footer-link2')!!}
+                            @endif
+                            @if(setting('footer-link3'))
+                                <li>
+                                    <i class="icon-left-dir" style="color: #121d5e;"></i>
+                                    <a href="{{setting('footer-link3')}}">دوره های حضوری (ویژه اصفهان)</a>
+                                </li>
+                                {!!setting_edit('footer-link3')!!}
+                            @endif
+                            @if(setting('footer-link4'))
+                                <li>
+                                    <i class="icon-left-dir" style="color: #121d5e;"></i>
+                                    <a href="{{setting('footer-link4')}}">کمیته راهبری آموزش (وابسته به سازمان بورس و اوراق بهادار)</a>
+                                </li>
+                                {!!setting_edit('footer-link4')!!}
+                            @endif
 
                         </ul>
 
@@ -60,7 +61,7 @@
                     </div>
                 </div>
                 <div class="column mcb-column mcb-item-fsx9fqodg one-third column_column">
-                    <div class="column_attr clearfix footer1" style="text-align: center;color:white;">
+                    <div class="column_attr clearfix footer1" style="text-align: center;color:white;padding-right: 5%;">
                         <h4
                             class="themecolor">
                         </h4>
@@ -96,9 +97,8 @@
                         {{--                                                        {!! setting('enamad.image') !!}--}}
                     </div>
                 </div>
-
                 <div class="column mcb-column mcb-item-o7wckprp4 one-third column_column" style="padding: 0!important;">
-                    <div class="column_attr clearfix footer1" style="border-radius: 30px;">
+                    <div class="column_attr clearfix footer1" style="border-radius: 30px;padding-right: 5%;">
 
                         <hr class="no_line" style="margin:0 auto 10px">
                         <div style="text-align: center;">
@@ -166,16 +166,16 @@
                                     {!!setting_edit('social-instagram4')!!}
 
                                 @endif
-                                    @if(setting('social-instagram5')!=null)
+                                @if(setting('social-instagram5')!=null)
 
-                                        <a class="socail" href="{{setting('social-instagram5')}}">
-                                            <i class="icon-instagram" style="float:right;size: 10px "></i>
-                                        </a>
-                                        <p style="font-size: 15px">طراحی معماری</p>
+                                    <a class="socail" href="{{setting('social-instagram5')}}">
+                                        <i class="icon-instagram" style="float:right;size: 10px "></i>
+                                    </a>
+                                    <p style="font-size: 15px">طراحی معماری</p>
 
-                                        {!!setting_edit('social-instagram5')!!}
+                                    {!!setting_edit('social-instagram5')!!}
 
-                                    @endif
+                                @endif
                                 @if(setting('social-instagram6')!=null)
 
                                     <a class="socail" href="{{setting('social-instagram6')}}">
