@@ -41,14 +41,11 @@
                                 @if(Route::currentRouteName()=='blog') class="current-menu-item" @endif>
                                 <a href=""><span>وبلاگ</span></a>
                                 <ul class="sub-menu" style="display: none;">
-
-                                    <li><a href="{{route('blog')}}">
-         <span>
-           مقالات
-   </span>
-                                        </a></li>
-
-                                    </li>
+                                    @foreach(Dpsoft\Mehr\Models\Category::whereFeatured(true)->take(6)->get() as $featuredCategory)
+                                        <li id="menu-item-2958" class="submenu">
+                                            <a href="{{$featuredCategory->posts_url}}"> {{$featuredCategory->title}}</a>
+                                        </li>
+                                    @endforeach
                                 </ul>
                                 <span class="menu-toggle"></span></li>
                             <li class="submenu"

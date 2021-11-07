@@ -185,6 +185,16 @@
                                     {!!setting_edit('social-instagram6')!!}
 
                                 @endif
+                                    @if(setting('social-instagram7')!=null)
+
+                                        <a class="socail" href="{{setting('social-instagram7')}}">
+                                            <i class="icon-instagram" style="float:right;size: 10px "></i>
+                                        </a>
+                                        <p style="font-size: 15px">طراحی و مد</p>
+
+                                        {!!setting_edit('social-instagram7')!!}
+
+                                    @endif
 
 
                             </div>
