@@ -224,7 +224,7 @@
                                         <div class="portfolio_wrapper isotope_wrapper">
                                             <ul class="portfolio_group lm_wrapper isotope grid col-4"
                                                 style="position: relative; height: 1079.77px;">
-                                                @foreach(\Dpsoft\Mehr\Models\Course::all() as $featuredCourse)
+                                                @foreach(\Dpsoft\Mehr\Models\Course::where('status','published')->get() as $featuredCourse)
                                                     <li class="portfolio-item isotope-item category-artwork category-banner  has-thumbnail"
                                                         style="position: absolute; left: 0px; top: 0px;">
                                                         <a href="{{$featuredCourse->url}}">
@@ -254,22 +254,22 @@
                                                                 </div>
                                                                 <div class="desc">
                                                                     <div class="title_wrapper">
-                                                                        <h5 class="entry-title" itemprop="headline" style="justify-content: center;display: flex;">
+                                                                        <h5 class="entry-title" itemprop="headline"
+                                                                            style="justify-content: center;display: flex;">
                                                                             <a
                                                                                 class="link"
                                                                                 href="{{$featuredCourse->url}}"
                                                                                 style="color: black!important;">{{$featuredCourse->title}}</a>
                                                                         </h5>
                                                                         <hr>
-                                                                        <div style="justify-content: center;display: flex;">
+                                                                        <div
+                                                                            style="justify-content: center;display: flex;">
                                                                             <a
                                                                                 class="button"
                                                                                 href="{{$featuredCourse->url}}"
                                                                                 style="color: white!important;margin: 0 ;">جزئیات
                                                                                 و ثبت نام</a>
                                                                         </div>
-
-
 
 
                                                                     </div>
@@ -350,6 +350,98 @@
         </div>
     </div>
 
+    <div class="section mcb-section mcb-section-88e9a90d8" id="about" style="padding-top:40px" data-id="#about">
+        <div class="section_wrapper mcb-section-inner">
+            <div class="wrap mcb-wrap mcb-wrap-1399c6a4d one  valign-top clearfix" style="">
+                <div class="mcb-wrap-inner">
+                    <div class="column mcb-column mcb-item-dee3c1fdb one column_fancy_heading">
+                        <div class="fancy_heading fancy_heading_icon">
+                            <div class="animate fadeIn" data-anim-type="fadeIn">
+                                <div class="fh-top"></div>
+                                <h2 class="title">نظر دانشجویان</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column mcb-column mcb-item-8b14ec5bd one-fourth column_our_team">
+                        <div class="team team_circle">
+                            <div class="animate zoomIn" data-anim-type="zoomIn">
+                                <div class="image_frame photo no_link scale-with-grid" style="border-color: #121d5e;">
+                                    <div class="image_wrapper">
+                                        <img class="scale-with-grid"
+                                             src="{{setting('student1')}}"
+                                             alt="{{setting('student-name1')}}" width="200" height="200">
+                                    </div>
+                                </div>
+                                <div class="desc_wrapper"><h4>{{setting('student-name1')}}</h4>
+                                    <p class="subtitle">{{setting('student-course1')}}</p>
+                                    <hr class="hr_color" style="background: #ffc600">
+                                    <div class="desc">{{setting('student-excerpt1')}}
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column mcb-column mcb-item-2f11e5c96 one-fourth column_our_team">
+                        <div class="team team_circle">
+                            <div class="animate zoomIn" data-anim-type="zoomIn">
+                                <div class="image_frame photo no_link scale-with-grid" style="border-color: #121d5e;">
+                                    <div class="image_wrapper">
+                                        <img class="scale-with-grid"
+                                             src="{{setting('student2')}}"
+                                             alt="{{setting('student-name2')}}" width="200" height="200">
+                                    </div>
+                                </div>
+                                <div class="desc_wrapper"><h4>{{setting('student-name2')}}</h4>
+                                    <p class="subtitle">{{setting('student-course2')}}</p>
+                                    <hr class="hr_color" style="background: #ffc600">
+                                    <div class="desc">{{setting('student-excerpt2')}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column mcb-column mcb-item-bf9821f07 one-fourth column_our_team">
+                        <div class="team team_circle">
+                            <div class="animate zoomIn" data-anim-type="zoomIn">
+                                <div class="image_frame photo no_link scale-with-grid" style="border-color: #121d5e;">
+                                    <div class="image_wrapper">
+                                        <img class="scale-with-grid"
+                                             src="{{setting('student3')}}"
+                                             alt="{{setting('student-name3')}}" width="200" height="200">
+                                    </div>
+                                </div>
+                                <div class="desc_wrapper"><h4>{{setting('student-name3')}}</h4>
+                                    <p class="subtitle">{{setting('student-course3')}}</p>
+                                    <hr class="hr_color" style="background: #ffc600">
+                                    <div class="desc">{{setting('student-excerpt3')}}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column mcb-column mcb-item-4f054d067 one-fourth column_our_team">
+                        <div class="team team_circle">
+                            <div class="animate zoomIn" data-anim-type="zoomIn">
+                                <div class="image_frame photo no_link scale-with-grid" style="border-color: #121d5e;">
+                                    <div class="image_wrapper">
+                                        <img class="scale-with-grid"
+                                             src="{{setting('student4')}}"
+                                             alt="{{setting('student-name4')}}" width="200" height="200">
+                                    </div>
+                                </div>
+                                <div class="desc_wrapper"><h4>{{setting('student-name4')}}</h4>
+                                    <p class="subtitle">{{setting('student-course4')}}</p>
+                                    <hr class="hr_color" style="background: #ffc600">
+                                    <div class="desc">{{setting('student-excerpt4')}}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
 @endsection
 @section('script')
