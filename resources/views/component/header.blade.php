@@ -30,7 +30,7 @@
                             <li class="submenu">
                                 <a href="{{route('course-list')}}">دوره ها</a>
                                 <ul class="sub-menu" style="display: none;">
-                                    @foreach(\Dpsoft\Mehr\Models\Course::all() as $course)
+                                    @foreach(\Dpsoft\Mehr\Models\Course::where('status','published')->get() as $course)
                                         <li id="menu-item-2958" class="submenu">
                                             <a href="{{$course->url}}">{{$course->title}}</a></li>
                                     @endforeach
