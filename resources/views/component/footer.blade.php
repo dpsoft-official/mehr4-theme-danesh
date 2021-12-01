@@ -2,7 +2,7 @@
 
      style="padding-top:1px;background-repeat:repeat-x;background-position:center bottom;background-image:url({{setting('background.footer')}}"
      data-id="#contact">
-    <div class="section_wrapper mcb-section-inner" style="max-width: 90%!important;width: 85%;">
+    <div class="section_wrapper mcb-section-inner" >
         <div class="wrap mcb-wrap mcb-wrap-oncoddvno one-second  valign-top clearfix" style="">
             <div class="mcb-wrap-inner">
                 <div class="column mcb-column mcb-item-r2fypeai6 one column_column"></div>
@@ -18,13 +18,13 @@
                 {{--                            <h2> با ما در ارتباط باشید</h2>--}}
                 {{--                        </div>--}}
                 {{--                    </div>--}}
-                <div class="column mcb-column mcb-item-u4tfbgc1t one-third column_column">
-                    <div class="column_attr clearfix footer1" style="text-align: center;color:white;padding-right: 5%;">
+                <div class="column mcb-column mcb-item-u4tfbgc1t one-fourth column_column">
+                    <div class="column_attr clearfix footer1" style="text-align: right;color:white;padding-right: 5%;">
                         <h4
                             class="themecolor">
                         </h4>
                         <h4 class="">لینک های مهم</h4>
-                        <ul style="line-height: 32px;text-align: right;">
+                        <ul style="line-height: 32px;font-size: 15px;">
                             @if(setting('footer-link1'))
                                 <li>
                                     <i class="icon-left-dir" style="color: #121d5e;"></i>
@@ -47,7 +47,7 @@
                                 {!!setting_edit('footer-link3')!!}
                             @endif
                             @if(setting('footer-link4'))
-                                <li style="white-space: nowrap">
+                                <li >
                                     <i class="icon-left-dir" style="color: #121d5e;"></i>
                                     <a href="{{setting('footer-link4')}}">کمیته راهبری آموزش (وابسته به سازمان بورس و اوراق بهادار)</a>
                                 </li>
@@ -59,7 +59,7 @@
 
                     </div>
                 </div>
-                <div class="column mcb-column mcb-item-fsx9fqodg one-third column_column">
+                <div class="column mcb-column mcb-item-fsx9fqodg one-fourth column_column">
                     <div class="column_attr clearfix footer1" style="text-align: center;color:white;padding-right: 5%;">
                         <h4
                             class="themecolor">
@@ -96,7 +96,7 @@
                         {{--                                                        {!! setting('enamad.image') !!}--}}
                     </div>
                 </div>
-                <div class="column mcb-column mcb-item-o7wckprp4 one-third column_column" style="padding: 0!important;">
+                <div class="column mcb-column mcb-item-o7wckprp4 one-fourth column_column" style="padding: 0!important;">
                     <div class="column_attr clearfix footer1" style="border-radius: 30px;padding-right: 5%;">
 
                         <hr class="no_line" style="margin:0 auto 10px">
@@ -113,11 +113,20 @@
                         </div>
                         {!!setting_edit('footerimage')!!}
                         <br>
-                        <p class="black">
-                            در شبکه های اجتماعی با ما همراه شوید: </p>
+
+                    </div>
+
+
+                </div>
+                <div class="column mcb-column mcb-item-fsx9fqodg one-fourth column_column">
+                    <div class="column_attr clearfix footer1" style="text-align: right;color:white;padding-right: 5%;">
+                        <h4
+                            class="themecolor">
+                        </h4>
+                        <h4 class="black">
+                            شبکه های اجتماعی : </h4>
 
                         <div class="row" style="color: black">
-                            <div class="column one-second">
 
                                 @if(setting('social-instagram1')!=null)
 
@@ -152,8 +161,6 @@
                                 @endif
 
 
-                            </div>
-                            <div class="column one-second">
 
                                 @if(setting('social-instagram4')!=null)
 
@@ -185,27 +192,23 @@
                                     {!!setting_edit('social-instagram6')!!}
 
                                 @endif
-                                    @if(setting('social-instagram7')!=null)
+                                @if(setting('social-instagram7')!=null)
 
-                                        <a class="socail" href="{{setting('social-instagram7')}}">
-                                            <i class="icon-instagram" style="float:right;size: 10px "></i>
-                                        </a>
-                                        <p style="font-size: 15px">طراحی و مد</p>
+                                    <a class="socail" href="{{setting('social-instagram7')}}">
+                                        <i class="icon-instagram" style="float:right;size: 10px "></i>
+                                    </a>
+                                    <p style="font-size: 15px">طراحی و مد</p>
 
-                                        {!!setting_edit('social-instagram7')!!}
+                                    {!!setting_edit('social-instagram7')!!}
 
-                                    @endif
+                                @endif
 
 
                             </div>
-                        </div>
 
 
                     </div>
-
-
                 </div>
-
             </div>
         </div>
 
@@ -217,8 +220,8 @@
 </div>
 <div class="footer_copy">
     <div class="container">
-        <div class="column one"><a id="back_to_top" class="button button_js" href=""><i
-                    class="icon-up-open-big"></i></a>
+        <div class="column one">
+{{--            <a id="back_to_top" class="button button_js" href=""><i class="icon-up-open-big"></i></a>--}}
 
             <div class="copyright" style="text-align: center;">
                 تمام حقوق این وبسایت برای موسسه آموزش عالی آزاد دانش پژوهان محفوظ است.
