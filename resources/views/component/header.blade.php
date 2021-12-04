@@ -6,6 +6,13 @@
 <div class="header_placeholder"></div>
 <div id="Top_bar" class="is-sticky" style="top: 0px;">
     <div class="container">
+        @if(setting('whatsapp-number'))
+        <div class="" style="left: auto;right: 0;display: block;">
+            <a id="" class=" " href="{{setting('whatsapp-number')}}" target="_blank" style="border-radius: 50%; position: fixed;bottom: 0px;right: 0px;margin: 20px;!important;z-index: 3; ">
+                <img width="50px" src="/vendor/mehr4-theme-danesh/images/theme/whatsapp.svg" style="margin: 30px;">
+            </a>
+        </div>
+        @endif
         <div class="column one">
             <div class="top_bar_left clearfix">
                 <div class="logo">
