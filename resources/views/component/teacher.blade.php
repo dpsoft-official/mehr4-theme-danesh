@@ -10,8 +10,8 @@
                             <div class="image_frame image_item no_link scale-with-grid aligncenter no_border">
                                 <div class="image_wrapper">
                                     <img class="scale-with-grid"
-                                         src="https://dpmaharat.com/storage-dpmaharat-com_mehrlms_ir/theme/yahya.alavi.jpg"
-                                         alt="home_developer2_pic2" title="" width="215"
+                                         src="{{isset($teacher['meta']['avatar']) ? Storage::url($teacher['meta']['avatar']) :'https://dpe.ac/storage-dpe-ac_mehrlms_ir/theme/user.png'}}"
+                                         alt="{{$teacher->name}}"  width="215"
                                          height="147">
                                 </div>
                             </div>
