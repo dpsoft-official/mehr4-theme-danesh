@@ -290,7 +290,9 @@
             </div>
         </div>
     </div>
-
+    @if(\App\User::withAnyTags(['برتر','استاد'])->count()>0)
+    @include('mehr4-theme-danesh::component.teacher')
+    @endif
     <div class="section mcb-section" id="moshavere">
         <div class="section_wrapper mcb-section-inner">
             <div class="wrap mcb-wrap three-fifth valign-top clearfix">

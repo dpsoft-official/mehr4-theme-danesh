@@ -512,7 +512,7 @@
                     <div class="wrap mcb-wrap one clearfix">
                         <!-- One Full Row-->
                         <div class="column mcb-column one  ">
-                            <div class="owl-carousel owl-theme">
+                            <div id="course-carousel" class="owl-carousel owl-theme">
                                 @include('mehr4-theme-danesh::component.category-courses',['courses'=>$similarCourses])
                             </div>
                         </div>

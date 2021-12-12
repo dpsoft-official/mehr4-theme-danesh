@@ -116,7 +116,7 @@ tpj(document).ready(function () {
 
 
 $(document).ready(function () {
-    $('.owl-carousel').owlCarousel({
+    $('#course-carousel').owlCarousel({
         rtl: true,
         loop: true,
         margin: 10,
@@ -129,6 +129,25 @@ $(document).ready(function () {
             },
             1000: {
                 items: 4
+            }
+        }
+    })
+});
+
+
+$(document).ready(function () {
+    $('#teacher-carousel').owlCarousel({
+        rtl: true,
+        loop: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
             }
         }
     })

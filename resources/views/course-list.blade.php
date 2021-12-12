@@ -60,7 +60,7 @@
                                 {{$categoryChild->title}}
                             </h2>
                             <div class="column mcb-column one  ">
-                                <div class="owl-carousel owl-theme">
+                                <div id="course-carousel" class="owl-carousel owl-theme">
                                     @include('mehr4-theme-danesh::component.category-courses',['courses'=>$categoryChild->courses->where('status','published')])
                                     <div class="slider_pagination"></div>
                                 </div>
