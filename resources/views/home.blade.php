@@ -352,6 +352,17 @@
         </div>
     </div>
 
+    <!-- #Seo -->
+    @foreach(\Dpsoft\Mehr\Models\Page::withAnyTags(['seo','main'])->get() as $page )
+        <div class="section_wrapper mcb-section-inner" style="padding:2% 1% 4px 5px;">
+            <div class="column mcb-column one column_column">
+                <div class="column_attr clearfix grid-container" id="seo-text">
+                    {!! $page->content!!}
+                </div>
+            </div>
+        </div>
+    @endforeach
+
     <div class="section mcb-section mcb-section-88e9a90d8" id="about" style="padding-top:40px" data-id="#about">
         <div class="section_wrapper mcb-section-inner">
             <div class="wrap mcb-wrap mcb-wrap-1399c6a4d one  valign-top clearfix" style="">
@@ -360,7 +371,7 @@
                         <div class="fancy_heading fancy_heading_icon">
                             <div class="animate fadeIn" data-anim-type="fadeIn">
                                 <div class="fh-top"></div>
-                                <h2 class="title">نظر دانشجویان</h2>
+                                <h2 class="title">نظر دانش پذیران </h2>
                             </div>
                         </div>
                     </div>

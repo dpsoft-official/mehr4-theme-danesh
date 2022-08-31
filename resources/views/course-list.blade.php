@@ -16,7 +16,8 @@
                 <div class="entry-content">
                     <div class="section mcb-section mcb-section-b2a472a43 bg-cover-ultrawide course-page"
                          style="background-image: url({{setting('coursepage')}})">
-                        <div class="section_wrapper mcb-section-inner">
+                        <div class="section_wrapper mcb-section-inner"
+                             style="max-width: 1220px !important;width: 100% !important;">
                             <div class="wrap mcb-wrap mcb-wrap-80efcb361 one valign-top clearfix" style="">
                                 <div class="mcb-wrap-inner">
                                     <div class="column mcb-column mcb-item-15855acd8 three-fourth column_column">
@@ -49,7 +50,8 @@
         @foreach(\Dpsoft\Mehr\Models\Category::where('parent_id',$selectedCategory->id)->get() as $categoryChild)
             <div class="section mcb-section "
                  style="padding-top:20px;padding-bottom:20px;box-shadow: 0 0 14px -6px;background: #fcf5f3; ">
-                <div class="section_wrapper mcb-section-inner">
+                <div class="section_wrapper mcb-section-inner"
+                     style="max-width: 1220px !important;width: 100% !important;">
                     <div class="wrap mcb-wrap one column-margin-20px clearfix align_center">
                     </div>
                     @if($categoryChild->courses() !=null)
@@ -73,17 +75,19 @@
     @elseif($selectedCategory)
         <div class="section mcb-section "
              style="padding-top:20px;padding-bottom:20px;box-shadow: 0 0 14px -6px;background: #fcf5f3; ">
-            <div class="section_wrapper mcb-section-inner">
+            <div class="section_wrapper mcb-section-inner" style="max-width: 1220px !important;width: 100% !important;">
                 <div class="wrap mcb-wrap one column-margin-20px clearfix align_center">
                 </div>
 
                 <div class="wrap mcb-wrap one clearfix">
                     <!-- One Full Row-->
                     @if($courses->count()!=0)
-                        <div class="section_wrapper mcb-section-inner ">
+                        <div class="section_wrapper mcb-section-inner "
+                             style="max-width: 1220px !important;width: 100% !important;">
                             <div class="">
                                 @foreach($courses->where('status','published') as $course)
-                                    <div class="item course-list-outer-div wrap mcb-wrap one-fourth category-course" id="item-container" >
+                                    <div class="item course-list-outer-div wrap mcb-wrap one-fourth category-course"
+                                         id="item-container">
                                         <div class="item_wrapper">
                                             <div class="image_wrapper">
                                                 <a href="{{$course->url}}">
@@ -147,7 +151,7 @@
     @elseif($query)
         <div class="section mcb-section "
              style="padding-top:20px;padding-bottom:20px;box-shadow: 0 0 14px -6px;background: #fcf5f3; ">
-            <div class="section_wrapper mcb-section-inner">
+            <div class="section_wrapper mcb-section-inner" style="max-width: 1220px !important;width: 100% !important;">
                 <div class="wrap mcb-wrap one column-margin-20px clearfix align_center">
                 </div>
                 <div class="wrap mcb-wrap one clearfix">
@@ -158,7 +162,7 @@
                     <!-- One Full Row-->
                     @if($courses->count()!=0)
                         <div class="column mcb-column one  ">
-                            <div class="owl-carousel owl-theme">
+                            <div id="course-carousel" class="owl-carousel owl-theme ">
                                 @include('mehr4-theme-danesh::component.category-courses',['courses'=>$courses])
                                 <div class="slider_pagination"></div>
                             </div>
@@ -174,31 +178,32 @@
             </div>
         </div>
     @else
-{{--        @include('mehr4-theme-danesh::component.category-courses',['courses'=>$category->courses])--}}
+        {{--        @include('mehr4-theme-danesh::component.category-courses',['courses'=>$category->courses])--}}
 
-    @php($allCategories=\Dpsoft\Mehr\Models\Category::whereHas('courses')->paginate(4))
-    @foreach($allCategories as $category)
-        <div class="section mcb-section "
-             style="padding-top:20px;padding-bottom:20px;box-shadow: 0 0 14px -6px;background: #fcf5f3; ">
-            <div class="section_wrapper mcb-section-inner">
-                {{--                    <div class="wrap mcb-wrap one column-margin-20px clearfix align_center">--}}
-                {{--                    </div>--}}
-                @if($category->courses() !=null)
-                    <div class="wrap mcb-wrap one clearfix">
-                        <h2 id="header-course">
-                            دسته بندی :
-                            {{$category->title}}
-                        </h2>
-                        <div class="column mcb-column one  ">
-                            <div class="owl-carousel owl-theme">
-                                @include('mehr4-theme-danesh::component.category-courses',['courses'=>$category->courses])
+        @php($allCategories=\Dpsoft\Mehr\Models\Category::whereHas('courses')->paginate(4))
+        @foreach($allCategories as $category)
+            <div class="section mcb-section "
+                 style="padding-top:20px;padding-bottom:20px;box-shadow: 0 0 14px -6px;background: #fcf5f3; ">
+                <div class="section_wrapper mcb-section-inner"
+                     style="max-width: 1220px !important;width: 100% !important;">
+                    {{--                    <div class="wrap mcb-wrap one column-margin-20px clearfix align_center">--}}
+                    {{--                    </div>--}}
+                    @if($category->courses() !=null)
+                        <div class="wrap mcb-wrap one clearfix">
+                            <h2 id="header-course">
+                                دسته بندی :
+                                {{$category->title}}
+                            </h2>
+                            <div class="column mcb-column one">
+                                <div id="course-carousel"  class="owl-carousel owl-theme ">
+                                    @include('mehr4-theme-danesh::component.category-courses',['courses'=>$category->courses])
+                                </div>
                             </div>
                         </div>
-                    </div>
-                @endif
+                    @endif
+                </div>
             </div>
-        </div>
-    @endforeach
-    {{$allCategories->render('mehr4-theme-danesh::pagination.custom')}}
+        @endforeach
+        {{$allCategories->render('mehr4-theme-danesh::pagination.custom')}}
     @endif
 @endsection

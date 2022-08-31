@@ -19,6 +19,7 @@
     <link rel="shortcut icon" href="{{Storage::url('theme/fav.png')}}" type="image/x-icon">
     @yield('head')
     <link href="{{mix('app.css','vendor/mehr4-theme-danesh')}}" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('/vendor/mehr4-theme-danesh/custom.css')}}">
     @yield('head')
     {!! setting('raw_header') !!}
 </head>

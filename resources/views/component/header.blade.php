@@ -35,24 +35,28 @@
                                 <a href="/"><span>خانه</span></a>
                             </li>
                             <li class="submenu">
-                                <a href="{{route('course-list')}}">دوره ها</a>
+                                <a href="{{route('course-list')}}">دپارتمان ها</a>
                                 <ul class="sub-menu" style="display: none;">
-                                    @foreach(\Dpsoft\Mehr\Models\Course::where('status','published')->get() as $course)
-                                        <li id="menu-item-2958" class="submenu">
-                                            <a href="{{$course->url}}">{{$course->title}}</a></li>
-                                    @endforeach
+                                        @foreach(Dpsoft\Mehr\Models\Category::whereFeatured(true)->take(6)->get() as $featuredCategory)
+                                            <li id="menu-item-2958" class="submenu">
+                                                <a href="{{$featuredCategory->courses_url}}"> {{$featuredCategory->title}}</a>
+                                            </li>
+                                        @endforeach
                                 </ul>
                                 <span class="menu-toggle"></span></li>
 
                             <li class="submenu "
                                 @if(Route::currentRouteName()=='blog') class="current-menu-item" @endif>
-                                <a href=""><span>وبلاگ</span></a>
+                                <a href="{{route('blog')}}"><span>وبلاگ</span></a>
                                 <ul class="sub-menu" style="display: none;">
-                                    @foreach(Dpsoft\Mehr\Models\Category::whereFeatured(true)->take(6)->get() as $featuredCategory)
+
                                         <li id="menu-item-2958" class="submenu">
-                                            <a href="{{$featuredCategory->posts_url}}"> {{$featuredCategory->title}}</a>
+                                            <a href="{{route('tag-posts', ['tag' => '4', 'name' => 'اخبار'])}}"> اخبار</a>
                                         </li>
-                                    @endforeach
+                                    <li id="menu-item-2958" class="submenu">
+                                        <a href="{{route('tag-posts', ['tag' => '5', 'name' => 'علمی'])}}"> علمی</a>
+                                    </li>
+
                                 </ul>
                                 <span class="menu-toggle"></span></li>
                             <li class="submenu"
