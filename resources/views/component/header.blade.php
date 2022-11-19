@@ -37,8 +37,8 @@
                             <li class="submenu">
                                 <a href="{{route('course-list')}}">دپارتمان ها</a>
                                 <ul class="sub-menu" style="display: none;">
-                                        @foreach(Dpsoft\Mehr\Models\Category::whereFeatured(true)->take(6)->get() as $featuredCategory)
-                                            <li id="menu-item-2958" class="submenu">
+                                        @foreach(Dpsoft\Mehr\Models\Category::whereFeatured(true)->get() as $featuredCategory)
+                                            <li id="menu-item-2958" class="submenu" style="width: 250px!important;">
                                                 <a href="{{$featuredCategory->courses_url}}"> {{$featuredCategory->title}}</a>
                                             </li>
                                         @endforeach
