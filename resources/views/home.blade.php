@@ -293,64 +293,7 @@
     @if(\App\User::withAnyTags(['برتر','استاد'])->count()>0)
     @include('mehr4-theme-danesh::component.teacher')
     @endif
-    <div class="section mcb-section" id="moshavere">
-        <div class="section_wrapper mcb-section-inner">
-            <div class="wrap mcb-wrap three-fifth valign-top clearfix">
-                <div class="mcb-wrap-inner">
-                    <div class="column mcb-column one column_image">
-                        <div
-                            class="image_frame image_item no_link scale-with-grid aligncenter no_border">
-                            <div class="image_wrapper">
-                                <img class="scale-with-grid"
-                                     src="{{setting('site.moshavere1')}}"
-                                     alt="{{setting('site.name')}}"
-                                     title="{{setting('site.name')}}">
-                                {!!setting_edit('site.moshavere1')!!}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="wrap mcb-wrap two-fifth valign-top clearfix" style="padding:40px 0 0 5%">
-                <div class="mcb-wrap-inner">
-                    <div class="column mcb-column one column_column">
-                        <div class="column_attr clearfix">
-                            <h3>{{setting('home-mosh')}}</h3>
-                            {!!setting_edit('home-mosh')!!}
-                            <div id="newsletter">
-                                <div id="message-newsletter"></div>
-                                <div class="form-group group">
-                                    <div class="column two-third ">
-                                        <input class=" request" type="" name="email_newsletter"
-                                               id="email_newsletter"
-                                               placeholder="شماره تماس شما">
-                                        <a class="button button_size_2 button_js" href="#"
-                                           style="padding: 0 90px;margin: .111rem;"><span
-                                                class="button_label">درخواست</span></a>
-                                    </div>
-                                    <div class="column one-third">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {{--                        <div class="column mcb-column one column_hover_box ">--}}
-                    {{--                            <div class="hover_box">--}}
-                    {{--                                <a href="{{route('contact')}}">--}}
-                    {{--                                    <div class="">--}}
-                    {{--                                        <img class="visible_photo scale-with-grid"--}}
-                    {{--                                             src="{{setting('site.moshavere2')}}"--}}
-                    {{--                                             alt="{{setting('site.name')}}"--}}
-                    {{--                                             title="{{setting('site.name')}}">--}}
-                    {{--                                        {!!setting_edit('site.moshavere2')!!}--}}
-                    {{--                                    </div>--}}
-                    {{--                                </a>--}}
-                    {{--                            </div>--}}
-                    {{--                        </div>--}}
-                </div>
-            </div>
-        </div>
-    </div>
+
 
     <!-- #Seo -->
     @foreach(\Dpsoft\Mehr\Models\Page::withAnyTags(['seo','main'])->get() as $page )
@@ -385,7 +328,7 @@
                                              alt="{{setting('student-name1')}}" width="200" height="200">
                                     </div>
                                 </div>
-                                <div class="desc_wrapper"><h4>{{setting('student-name1')}}</h4>
+                                <div class="desc_wrapper">
                                     <p class="subtitle">{{setting('student-course1')}}</p>
                                     <hr class="hr_color" style="background: #ffc600">
                                     <div class="desc">{{setting('student-excerpt1')}}
@@ -405,7 +348,7 @@
                                              alt="{{setting('student-name2')}}" width="200" height="200">
                                     </div>
                                 </div>
-                                <div class="desc_wrapper"><h4>{{setting('student-name2')}}</h4>
+                                <div class="desc_wrapper">
                                     <p class="subtitle">{{setting('student-course2')}}</p>
                                     <hr class="hr_color" style="background: #ffc600">
                                     <div class="desc">{{setting('student-excerpt2')}}
@@ -424,7 +367,7 @@
                                              alt="{{setting('student-name3')}}" width="200" height="200">
                                     </div>
                                 </div>
-                                <div class="desc_wrapper"><h4>{{setting('student-name3')}}</h4>
+                                <div class="desc_wrapper">
                                     <p class="subtitle">{{setting('student-course3')}}</p>
                                     <hr class="hr_color" style="background: #ffc600">
                                     <div class="desc">{{setting('student-excerpt3')}}</div>
@@ -442,7 +385,7 @@
                                              alt="{{setting('student-name4')}}" width="200" height="200">
                                     </div>
                                 </div>
-                                <div class="desc_wrapper"><h4>{{setting('student-name4')}}</h4>
+                                <div class="desc_wrapper">
                                     <p class="subtitle">{{setting('student-course4')}}</p>
                                     <hr class="hr_color" style="background: #ffc600">
                                     <div class="desc">{{setting('student-excerpt4')}}</div>
