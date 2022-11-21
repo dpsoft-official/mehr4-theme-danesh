@@ -138,6 +138,7 @@
                                 <div class="slider_pagination"></div>
                             </div>
                         </div>
+                        {{$courses->render('mehr4-theme-danesh::pagination.custom')}}
                     @else
                         <br>
                         <h2 style="text-align: right;">دوره ای یافت نشد</h2>
