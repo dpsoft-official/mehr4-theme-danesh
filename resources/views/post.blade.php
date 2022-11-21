@@ -17,13 +17,13 @@
 
             {!!setting_edit('postimage')!!}
             <div class="intro-meta">
-                <div class="date">
-                    <span>{{$post->posted_at}}</span>
-                </div>
-                <div class="author">
-                    <span><a class="author-title"
-                             >{{$post->author->name}}</a></span>
-                </div>
+{{--                <div class="date">--}}
+{{--                    <span>{{$post->posted_at}}</span>--}}
+{{--                </div>--}}
+{{--                <div class="author">--}}
+{{--                    <span><a class="author-title"--}}
+{{--                             >{{$post->author->name}}</a></span>--}}
+{{--                </div>--}}
             </div>
         </div>
         <div class="intro-next">
@@ -37,56 +37,56 @@
                     <div class="post-wrapper-content" style="background-color: white;">
                         <div class="section mcb-section post-section">
                             <div class="section_wrapper mcb-section-inner">
-                                <div class="wrap mcb-wrap one-fifth  column-margin-20px valign-top clearfix">
-                                    <div class="mcb-wrap-inner">
+{{--                                <div class="wrap mcb-wrap one-fifth  column-margin-20px valign-top clearfix">--}}
+{{--                                    <div class="mcb-wrap-inner">--}}
 
-                                        <div class="column mcb-column one column_image">
-                                            <div class="image_frame image_item no_link scale-with-grid no_border">
+{{--                                        <div class="column mcb-column one column_image">--}}
+{{--                                            <div class="image_frame image_item no_link scale-with-grid no_border">--}}
 
-                                                <div class="image_wrapper" style="text-align: center;">
-                                                    <img class="scale-with-grid" style="margin-top: 10%;border-radius: 30px;"
-                                                         src="{{$post->author->avatar
+{{--                                                <div class="image_wrapper" style="text-align: center;">--}}
+{{--                                                    <img class="scale-with-grid" style="margin-top: 10%;border-radius: 30px;"--}}
+{{--                                                         src="{{$post->author->avatar--}}
 
-}}" {{$post->author->name}}>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="column mcb-column one column_column">
-                                            <div class="column_attr clearfix">
-                                                <a href="#">
-                                                    <h5 class="author-title">{{$post->author->name}}</h5>
-                                                </a>
-                                                <p>
+{{--}}" {{$post->author->name}}>--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="column mcb-column one column_column">--}}
+{{--                                            <div class="column_attr clearfix">--}}
+{{--                                                <a href="#">--}}
+{{--                                                    <h5 class="author-title">{{$post->author->name}}</h5>--}}
+{{--                                                </a>--}}
+{{--                                                <p>--}}
 {{--                                                    {{$post->first()->author->meta['bio']??'   '}}--}}
 
-                                                </p>
-                                                <p>
+{{--                                                </p>--}}
+{{--                                                <p>--}}
 
-                                                </p>
-                                                <div class="image_wrapper" style="text-align: center;">
+{{--                                                </p>--}}
+{{--                                                <div class="image_wrapper" style="text-align: center;">--}}
 
-                                                    <img class="scale-with-grid"
-                                                         src="{{setting('comimage')}}">
-                                                    {!!setting_edit('comimage')!!}
-                                                </div>
+{{--                                                    <img class="scale-with-grid"--}}
+{{--                                                         src="{{setting('comimage')}}">--}}
+{{--                                                    {!!setting_edit('comimage')!!}--}}
+{{--                                                </div>--}}
 
-                                                <a href="#comments"><h5 class="author-title"> ({{$post->comments_count}})
-                                                        نظر
-                                                    </h5></a>
+{{--                                                <a href="#comments"><h5 class="author-title"> ({{$post->comments_count}})--}}
+{{--                                                        نظر--}}
+{{--                                                    </h5></a>--}}
 
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
                                 <div class="wrap mcb-wrap three-fifth valign-top clearfix"
-                                     style="padding:2px 2% 4px 5px;">
+                                     style="padding:2px 2% 4px 5px;width: 80% !important;">
                                     <div class="mcb-wrap-inner">
                                         <div class="column mcb-column one column_column">
                                             <div class="column_attr clearfix">
                                                 <h3 class="post-title-blog"
                                                     style="margin-bottom: 5px;">{!!$post->edit_url_html!!}{{$post->title}}</h3>
                                                 <br>
-                                                <p><img src="{{Storage::url($post->image)}}"> </p>
+{{--                                                <p><img src="{{Storage::url($post->image)}}"> </p>--}}
                                                 <p class="desc-post">
                                                     {!!$post->description!!}
 
