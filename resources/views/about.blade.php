@@ -108,7 +108,7 @@
                                             <hr class="no_line" style="margin: 0 auto 15px;">
                                             <div class=container" >
                                                 <div class="column_attr clearfix" style="background-color:#121d5e;padding:10px ;border-radius: 30px;">
-                                                    <a href="http://vohec.ir/">
+                                                    <a href="https://heis.msrt.ir/">
                                                         <h2 class="" style="text-align: center;font-size: 1.3rem;color:white">استعلام گواهینامه</h2>
                                                     </a>
                                                 </div>
