@@ -51,10 +51,16 @@
                                 <ul class="sub-menu" style="display: none;">
 
                                         <li id="menu-item-2958" class="submenu">
-                                            <a href="{{route('tag-posts', ['tag' => '4', 'name' => 'اخبار'])}}"> اخبار</a>
+                                            <a href="{{route('tag-posts', ['tag' => '144', 'name' => 'اخبار'])}}"> اخبار</a>
                                         </li>
                                     <li id="menu-item-2958" class="submenu">
-                                        <a href="{{route('tag-posts', ['tag' => '5', 'name' => 'علمی'])}}"> علمی</a>
+                                        <a href="{{route('tag-posts', ['tag' => '143', 'name' => 'علمی'])}}"> علمی</a>
+                                    </li>
+                                    <li id="menu-item-2958" class="submenu">
+                                        <a href="{{route('tag-posts', ['tag' => '145', 'name' => 'علمی'])}}">اخبار پیام نور</a>
+                                    </li>
+                                    <li id="menu-item-2958" class="submenu">
+                                        <a href="{{route('tag-posts', ['tag' => '146', 'name' => 'علمی'])}}">راهنمای پذیرش دوره های فراگیر</a>
                                     </li>
 
                                 </ul>
