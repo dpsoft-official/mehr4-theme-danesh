@@ -83,17 +83,17 @@
 
                         <br>
                         <br>
-                        <div class="google-map-wrapper no_border">
-                            <div class="gmap_canvas">
-                                {!! setting('iframegooglemapfooter')!!}
+                        @if(setting('mapimage')!=null)
+                            <div class="google-map-wrapper no_border">
+                                <div class="gmap_canvas">
+                                    <img src=" {!! setting('mapimage')!!}" style="width: 267px;height: 100px;">
+
+                                </div>
+
                             </div>
+                        @endif
+                        {!!setting_edit('mapimage')!!}
 
-                        </div>
-                        {!!setting_edit('iframegooglemapfooter')!!}
-
-
-                        {{--                             <hr class="no_line" style="margin:0 auto 10px">--}}
-                        {{--                                                        {!! setting('enamad.image') !!}--}}
                     </div>
                 </div>
                 <div class="column mcb-column mcb-item-o7wckprp4 one-fourth column_column" style="padding: 0!important;">
@@ -233,115 +233,3 @@
         </div>
     </div>
 </div>
-
-
-{{--@if(setting('footer')=='true')--}}
-{{--<div class="section mcb-section mcb-section-lidfqp97d" id="contact"--}}
-{{--     style="padding-top:1px;background-repeat:repeat-x;background-position:center bottom;"--}}
-{{--     data-id="#contact">--}}
-{{--    <div class="section_wrapper mcb-section-inner">--}}
-{{--        <div class="wrap mcb-wrap mcb-wrap-oncoddvno one-third  valign-top clearfix" style="">--}}
-{{--            <div class="mcb-wrap-inner">--}}
-{{--                <div class="column mcb-column mcb-item-r2fypeai6 one column_column"></div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--        <div class="wrap mcb-wrap mcb-wrap-zfqb1gkh4 one  valign-top clearfix" style="">--}}
-{{--            <div class="mcb-wrap-inner">--}}
-{{--                <div class="column mcb-column mcb-item-l0uvlpo5l one column_divider">--}}
-{{--                    <hr class="no_line" style="margin:0 auto 20px">--}}
-{{--                </div>--}}
-{{--                <div class="column mcb-column mcb-item-uyjf594u5 one column_column">--}}
-{{--                    <div class="column_attr clearfix align_center" style="">--}}
-{{--                        <h2> با ما در ارتباط باشید</h2>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--                <div class="column mcb-column mcb-item-u4tfbgc1t one-third column_column">--}}
-{{--                    <div class="column_attr clearfix footer1" style="text-align: center;">--}}
-{{--                        <h4--}}
-{{--                            class="themecolor">--}}
-{{--                        </h4>--}}
-{{--                        <img  src="{{Storage::url('theme/logo-footer.png')}}">--}}
-{{--                        <hr class="no_line" style="margin:0 auto 10px">--}}
-{{--                        {!! setting('enamad.image') !!}--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--                <div class="column mcb-column mcb-item-o7wckprp4 one-third column_column">--}}
-{{--                    <div class="column_attr clearfix footer1"--}}
-{{--                         style="padding:50px 15% 35px;border-radius: 30px;"><h4--}}
-{{--                            class="themecolor">آدرس ما</h4>--}}
-{{--                        <p style="color: #fff;">{{setting('contact.address')}}</p>--}}
-
-{{--                        <hr class="no_line" style="margin:0 auto 10px">--}}
-{{--                        <div class="google-map-wrapper no_border">--}}
-
-{{--                            <div class="gmap_canvas" >--}}
-
-{{--                                {!! setting('iframegooglemapfooter')!!}--}}
-
-{{--                            </div>--}}
-
-{{--                        </div>--}}
-
-{{--                        <p style="color: white;">24 ساعت شبانه روز را پاسخگو خواهیم بود</p>--}}
-
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <div class="column mcb-column mcb-item-fsx9fqodg one-third column_column">--}}
-{{--                <div class="column_attr clearfix footer1"--}}
-{{--                     style="padding:50px 15% 35px;border-radius: 30px;height: 20rem;">--}}
-
-{{--                    <p style="color: white;">--}}
-{{--                        از طریق ارسال ایمیل با ما در ارتباط باشید:--}}
-{{--                    </p>--}}
-
-{{--                  <a href="mailto:{{setting('contact.email')}}" style="color: #fff;"> {{setting('contact.email')}}</a>--}}
-{{--                    --}}{{--                        <h4--}}
-{{--                    --}}{{--                            class="themecolor">شبکه های اجتماعی</h4>--}}
-{{--                    <hr class="no_line" style="margin:0 auto 10px">--}}
-{{--                    <p style="color: #fff;">شماره تماس:<br>--}}
-{{--                    <p style="color: white;">       {{setting('contact.phone')}}</p>--}}
-
-{{--                    <p style="color: white;">--}}
-{{--                        در شبکه های اجتماعی با ما همراه شوید: </p>--}}
-{{--                    <p style="color: #fff;">--}}
-{{--                        @if(setting('social.facebook')!=null)--}}
-{{--                            <a class="socail" href="{{setting('social.facebbok')}}"><i--}}
-{{--                                    class="icon-facebook-circled"></i></a>--}}
-{{--                        @endif--}}
-{{--                        @if(setting('social.telegram')!=null)--}}
-{{--                            <a class="socail" href="{{setting('social.telegram')}}"><i--}}
-{{--                                    class="icon-paper-plane-line"></i></a>--}}
-{{--                        @endif--}}
-{{--                        @if(setting('social.instagram')!=null)--}}
-{{--                            <a class="socail" style="" href="{{setting('social.instagram')}}"><i--}}
-{{--                                    class="icon-instagram"></i></a>--}}
-{{--                        @endif  @if(setting('social.twitter')!=null)--}}
-{{--                            <a class="socail" style="" href="{{setting('social.twitter')}}"><i--}}
-{{--                                    class="icon-twitter-circled"></i></a>--}}
-{{--                        @endif--}}
-{{--                    </p>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-{{--</div>--}}
-{{--<div class="widgets_wrapper">--}}
-{{--    <div class="container">--}}
-{{--    </div>--}}
-{{--</div>--}}
-{{--<div class="footer_copy">--}}
-{{--    <div class="container">--}}
-{{--        <div class="column one"><a id="back_to_top" class="button button_js" href=""><i--}}
-{{--                    class="icon-up-open-big"></i></a>--}}
-
-{{--            <div class="copyright" style="text-align: center;">--}}
-{{--                طراحی در--}}
-
-{{--                <a target="_blank" rel="nofollow" href="http://dpsoft.ir">dpsoft</a>--}}
-{{--            </div>--}}
-{{--            <ul class="social"></ul>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-{{--</div>--}}
-{{--@endif--}}
