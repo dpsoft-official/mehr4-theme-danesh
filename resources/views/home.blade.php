@@ -207,7 +207,6 @@
                         </div>
                     </div>
 
-
                     <div class="section mcb-section  course-home" id="gallery"
                          data-id="#gallery" style="padding-bottom: 0;">
                         <div class="section_wrapper mcb-section-inner">
@@ -215,7 +214,7 @@
                                 <div class="mcb-wrap-inner">
                                     <div class="column mcb-column mcb-item-mppu1ezi0 one column_column head-packege">
                                         <div class="column_attr clearfix align_center " style="">
-                                            <h2 class="section-coursefeature">دوره های آموزشی پرمخاطب</h2>
+                                            <h2 class="section-coursefeature">دپارتمان ها </h2>
                                         </div>
                                         <hr>
                                     </div>
@@ -224,30 +223,30 @@
                                         <div class="portfolio_wrapper isotope_wrapper">
                                             <ul class="portfolio_group lm_wrapper isotope grid col-4"
                                                 style="position: relative; height: 1079.77px;">
-                                                @foreach(\Dpsoft\Mehr\Models\Course::where('status','published')->get() as $featuredCourse)
+                                                @foreach(\Dpsoft\Mehr\Models\Category::where('featured',TRUE)->get() as $category)
                                                     <li class="portfolio-item isotope-item category-artwork category-banner  has-thumbnail"
                                                         style="position: absolute; left: 0px; top: 0px;">
-                                                        <a href="{{$featuredCourse->url}}">
+                                                        <a href="{{$category->courses_url}}">
                                                             <div class="portfolio-item-fw-bg" style="">
                                                                 <div class="portfolio-item-fill"></div>
                                                                 <div class="list_style_header">
                                                                     <h3 class="entry-title" itemprop="headline">
                                                                         <a class="link"
-                                                                           href="{{$featuredCourse->url}}">
-                                                                            {{$featuredCourse->title}}
-                                                                        </a>
-                                                                    </h3>
+                                                                           href="{{$category->courses_url}}">
+                                                                            {{$category->title}}
+                                                                         </a>
+                                                                     </h3>
 
-                                                                </div>
-                                                                <div class="image_frame scale-with-grid">
-                                                                    <div class="image_wrapper"><a
-                                                                            href="{{$featuredCourse->url}}">
+                                                                 </div>
+                                                                 <div class="image_frame scale-with-grid">
+                                                                     <div class="image_wrapper"><a
+                                                                             href="{{$category->courses_url}}">
                                                                             <div class="mask"></div>
                                                                             <img width="960" height="720"
                                                                                  class="scale-with-grid wp-post-image"
                                                                                  alt=""
                                                                                  loading="lazy"
-                                                                                 srcset=" {{$featuredCourse->avatar? Storage::url($featuredCourse->avatar):'https://themes.muffingroup.com/betheme/wp-content/uploads/2020/10/betheme-portfolio-pic1-960x720.jpg'}}"
+                                                                                 srcset=" {{($category->image)? Storage::url($category->image):'https://themes.muffingroup.com/betheme/wp-content/uploads/2020/10/betheme-portfolio-pic1-960x720.jpg'}}"
                                                                                  sizes="(max-width: 960px) 100vw, 960px"></a>
 
                                                                     </div>
@@ -255,22 +254,12 @@
                                                                 <div class="desc">
                                                                     <div class="title_wrapper">
                                                                         <h5 class="entry-title" itemprop="headline"
-                                                                            style="justify-content: center;display: flex;">
+                                                                            style="justify-content: center;display: flex;text-align: center;">
                                                                             <a
                                                                                 class="link"
-                                                                                href="{{$featuredCourse->url}}"
-                                                                                style="color: black!important;">{{$featuredCourse->title}}</a>
+                                                                                href="{{$category->courses_url}}"
+                                                                                style="color: black!important;">{{$category->title}}</a>
                                                                         </h5>
-                                                                        <hr>
-                                                                        <div
-                                                                            style="justify-content: center;display: flex;">
-                                                                            <a
-                                                                                class="button"
-                                                                                href="{{$featuredCourse->url}}"
-                                                                                style="color: white!important;margin: 0 ;">جزئیات
-                                                                                و ثبت نام</a>
-                                                                        </div>
-
 
                                                                     </div>
                                                                 </div>
@@ -285,15 +274,16 @@
                             </div>
                         </div>
                     </div>
+
+
                 </div>
 
             </div>
         </div>
     </div>
     @if(\App\User::withAnyTags(['برتر','استاد'])->count()>0)
-    @include('mehr4-theme-danesh::component.teacher')
+        @include('mehr4-theme-danesh::component.teacher')
     @endif
-
 
     <!-- #Seo -->
     @foreach(\Dpsoft\Mehr\Models\Page::withAnyTags(['seo','main'])->get() as $page )
