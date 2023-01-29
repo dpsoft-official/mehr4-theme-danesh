@@ -57,10 +57,10 @@
                                         <a href="{{route('tag-posts', ['tag' => '143', 'name' => 'علمی'])}}"> علمی</a>
                                     </li>
                                     <li id="menu-item-2958" class="submenu">
-                                        <a href="{{route('tag-posts', ['tag' => '145', 'name' => 'علمی'])}}">اخبار پیام نور</a>
+                                        <a href="{{route('tag-posts', ['tag' => '211', 'name' => 'اخبار پیام نور'])}}">اخبار پیام نور</a>
                                     </li>
                                     <li id="menu-item-2958" class="submenu">
-                                        <a href="{{route('tag-posts', ['tag' => '146', 'name' => 'علمی'])}}">راهنمای پذیرش دوره های فراگیر</a>
+                                        <a href="{{route('tag-posts', ['tag' => '146', 'name' => 'راهنمای پذیرش دوره های فراگیر'])}}">راهنمای پذیرش دوره های فراگیر</a>
                                     </li>
 
                                 </ul>
