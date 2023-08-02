@@ -1,10 +1,269 @@
+/*GLOBAL*/
+.post-excerpt,p.content-about, #seo-text p, ul, .dark, a.content_link .title, h6, h6 a, h6 a:hover, .style-simple .sliding_box .desc_wrapper h4, .text-logo #logo, h1, h1 a, h1 a:hover, h2, h2 a, h2 a:hover, h3, h3 a, h3 a:hover, h4, h4 a, h4 a:hover {
+    color: #263238;
+}
+table,td,tr,th,.content_slider.carouselul li a .title,.content_slider.flat.description ul li .desc,.content_slider.flat.description ul li a .desc,.feature_list ul li a,.flat_box a,.flat_box a:hover,.icon_box a .desc,.icon_box a:hover .desc,.list_item a,.list_item a:hover,.post-nav.minimal a i,.story_box .desc,.widget_recent_entries ul li a,body,ul.timeline_items {
+    color: #263238;
+}
+#comments .commentlist>li .comment-author .says, .article_box .desc_wrapper p, .blockquote p.author span, .button-love a .label, .chart_box p, .counter .desc_wrapper .title, .fancy_heading .inside, .fancy_heading_line .slogan, .filters_buttons li.label, .fixed-nav .desc .date, .Latest_news ul li .desc_footer, .pager-single a, .pager .pages a, .post-footer, .post-footer a span.label, .post-meta, .post-meta a, .pricing-box .plan-header .price sup.period, .pricing-box .plan-header p.subtitle, .product_meta .posted_in, .Recent_posts ul li a .desc .date, .share-simple-wrapper .icons a, .shipping-calculator-button:after, .shop-filters .woocommerce-result-count, .shop_slider .shop_slider_ul li .item_wrapper .price del, .team .desc_wrapper p.subtitle, .testimonials_slider .testimonials_slider_ul li .author span, .testimonials_slider .testimonials_slider_ul li .author span a, .tp_recent_tweets .twitter_time, .widget_price_filter .price_label, .widget_recent_entries ul li .post-date, .widget_shopping_cart ul.product_list_widget li dl, .woocommerce .shop_table .product-name .variation>dd, .woocommerce ul.product_list_widget li .quantity{
+    color: #263238;
+}
+.post-excerpt,p{
+    font-weight: 300;
+}
+/*HOME PAGE*/
+#seo-text {
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
 #seo-text div * {
     text-align: right;
-    line-height:2.3!important;
+    line-height: 2.3 !important;
     direction: rtl;
 }
-#seo-text p,ul {
-    font-weight:500;
+
+#seo-text p, ul {
+    font-weight: 400;
     font-size: 15px;
-    color:#4b5259;
+}
+
+/*page navbar*/
+.about-page, .contact-page, .course-page {
+    padding-top: 142px !important;
+    padding-bottom: 21px !important;
+}
+
+/*course card*/
+.course-item-img {
+    border-radius: 5px !important;
+}
+
+.course-text1 {
+    display: none;
+}
+
+#item-container {
+    padding: 0;
+    border-radius: 15px;
+}
+
+.course-item-img {
+    border-radius: 15px 15px 0 0;
+}
+
+.mcb-item-15855acd8 {
+    margin: 0;
+}
+
+#Intro .intro-inner {
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+/*category page*/
+.category-course {
+    margin-bottom: 30px !important;
+}
+h4.title-course a {
+    font-weight: 800;
+    font-size: 18px;
+}
+/*course page -> left section*/
+.icon_box {
+    padding: 0 !important;
+}
+
+.img-fluid {
+    margin: 0 !important;
+    border-radius: 5px 5px 0 0;
+}
+.intro-title{
+    font-weight: 900 !important;
+}
+
+/*home page all courses section*/
+/*.section {*/
+/*    padding-top: 100px;*/
+/*    padding-bottom: 100px;*/
+/*}*/
+.mcb-wrap-m5cbyanks{
+    padding-bottom: 100px;
+}
+.mcb-wrap-m5cbyanks .column_attr {
+    padding: 0 !important;
+    border-radius: 15px !important;
+}
+
+.mcb-wrap-m5cbyanks .column_attr .scale-with-grid {
+    border-radius: 15px 15px 0 0;
+}
+
+.photo_wrapper .photo {
+    border-radius: 15px 15px 0 0;
+}
+
+.center-button-home {
+    width: unset;
+}
+
+.dark {
+    padding-top: 150px;
+}
+
+.title-courese-home {
+    font-size: 36px;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 36px;
+}
+
+h6 {
+    font-weight: 400;
+}
+
+h4 {
+    font-weight: 500;
+}
+a.button .button_label {
+    font-weight: 800;
+}
+
+/*BLOG*/
+h3[itemprop='headline']{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+/*COMMENT*/
+div.avatar{
+    float: none !important;
+}
+.comment_right,div.comment_info p{
+    margin: 0;
+    width: 80% !important;
+}
+p.p-com{
+    padding-top: 0;
+}
+
+/**
+*
+*	Name:			IRANYekanX Fonts
+*	Version:			2.4
+*	Author:			Moslem Ebrahimi (moslemebrahimi.com)
+*	Created on:		Aug 02, 2022
+*	Updated on:		Aug 02, 2022
+*	Website:			http://fontiran.com
+*	Copyright:		Commercial/Proprietary Software
+--------------------------------------------------------------------------------------
+فونت ایران یکان X  یک نرم افزار مالکیتی محسوب می شود. جهت آگاهی از قوانین استفاده از این فونت ها لطفا به وب سایت (فونت ایران دات کام) مراجعه نمایید
+--------------------------------------------------------------------------------------
+IRANYekanX fonts are considered a proprietary software. To gain information about the laws regarding the use of these fonts, please visit www.fontiran.com
+--------------------------------------------------------------------------------------
+This set of fonts are used in this project under the license: (.....)
+------------------------------------------------------------------------------------- fonts/-
+*
+**/
+
+
+@font-face {
+    font-family: IRANYekanX;
+    font-style: normal;
+    font-weight: 100;
+    src: url('iranyekanx/woff/IRANYekanX-Thin.woff') format('woff'),
+    url('iranyekanx/woff2/IRANYekanX-Thin.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: IRANYekanX;
+    font-style: normal;
+    font-weight: 200;
+    src: url('iranyekanx/woff/IRANYekanX-UltraLight.woff') format('woff'),
+    url('iranyekanx/woff2/IRANYekanX-UltraLight.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: IRANYekanX;
+    font-style: normal;
+    font-weight: 300;
+    src: url('iranyekanx/woff/IRANYekanX-Light.woff') format('woff'),
+    url('iranyekanx/woff2/IRANYekanX-Light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: IRANYekanX;
+    font-style: normal;
+    font-weight: 500;
+    src: url('iranyekanx/woff/IRANYekanX-Medium.woff') format('woff'),
+    url('iranyekanx/woff2/IRANYekanX-Medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: IRANYekanX;
+    font-style: normal;
+    font-weight: 600;
+    src: url('iranyekanx/woff/IRANYekanX-DemiBold.woff') format('woff'),
+    url('iranyekanx/woff2/IRANYekanX-DemiBold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: IRANYekanX;
+    font-style: normal;
+    font-weight: 800;
+    src: url('iranyekanx/woff/IRANYekanX-ExtraBold.woff') format('woff'),
+    url('iranyekanx/woff2/IRANYekanX-ExtraBold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: IRANYekanX;
+    font-style: normal;
+    font-weight: 900;
+    src: url('iranyekanx/woff/IRANYekanX-Black.woff') format('woff'),
+    url('iranyekanx/woff2/IRANYekanX-Black.woff2') format('woff2');
+}
+@font-face {
+    font-family: IRANYekanX;
+    font-style: normal;
+    font-weight: 950;
+    src: url('iranyekanx/woff/IRANYekanX-ExtraBlack.woff') format('woff'),
+    url('iranyekanx/woff2/IRANYekanX-ExtraBlack.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: IRANYekanX;
+    font-style: normal;
+    font-weight: 1000;
+    src: url('iranyekanx/woff/IRANYekanX-Heavy.woff') format('woff'),
+    url('iranyekanx/woff2/IRANYekanX-Heavy.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: IRANYekanX;
+    font-style: normal;
+    font-weight: bold;
+    src: url('iranyekanx/woff/IRANYekanX-Bold.woff') format('woff'),
+    url('iranyekanx/woff2/IRANYekanX-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: IRANYekanX;
+    font-style: normal;
+    font-weight: normal;
+    src: url('iranyekanx/woff/IRANYekanX-Regular.woff') format('woff'),
+    url('iranyekanx/woff2/IRANYekanX-Regular.woff2') format('woff2');
+}
+
+
+#Subheader .title, .offer_li .title h3, .timeline_items li h3 span, a, body, button, div, h1, h2, h3, h4, h5, h6, input[type=button], input[type=email], input[type=password], input[type=reset], input[type=submit], input[type=tel], input[type=text], li, nav, p, select, span, span.date_label, textarea, ul{
+    font-family: IRANYekanX,system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+    -moz-font-feature-settings: "ss02";
+    -webkit-font-feature-settings: "ss02";
+    font-feature-settings: "ss02";
+    -moz-font-feature-settings: "ss03";
+    -webkit-font-feature-settings: "ss03";
+    font-feature-settings: "ss03";
+
 }
