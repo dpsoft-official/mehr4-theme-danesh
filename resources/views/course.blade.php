@@ -147,7 +147,7 @@
                                                     {!! $course->description !!}
                                                 </p>
                                             </div>
-                                            @if(\Gate::allows('view',$course) And $course->sections->count()>0)
+                                            @if( $course->sections->count()>0)
                                                 <div class="section" style="background-color: white">
                                                     <div>
                                                         <div class="column one column_blog">
@@ -193,31 +193,28 @@
                                                                                             <ul>
                                                                                                 @foreach($section->lessons as $lesson)
                                                                                                     <li>
-                                                                                                        {{--                                                                                                    @if($lesson->preview==false  )--}}
-                                                                                                        {{--                                                                                                        <a onclick="myFunction()"--}}
-                                                                                                        {{--                                                                                                           target="_blank"--}}
-                                                                                                        {{--                                                                                                           class="video">--}}
-                                                                                                        {{--                                                                                                            <i class="icon-play"></i>{{$lesson->title}}--}}
-                                                                                                        {{--                                                                                                        </a>--}}
-                                                                                                        {{--                                                                                                    @endif--}}
-                                                                                                        {{--                                                                                                    @if($lesson->preview==true )--}}
-                                                                                                        <a href="{{\MehrLock::lessonUrl($lesson)}}"
-                                                                                                           target="_blank"
-                                                                                                           class="video"
-                                                                                                           ta-toggle="tooltip"
-                                                                                                           data-placement="right"
-                                                                                                        >
-                                                                                                            <i class="icon-play"></i>{{$lesson->title}}
-                                                                                                        </a>
-                                                                                                        {{--                                                                                                    @endif--}}
-                                                                                                        {{--                                                                                                    @if($lesson->preview==true )--}}
-                                                                                                        {{--                                                                                                        <span--}}
-                                                                                                        {{--                                                                                                            style="float: left;">{{$lesson->duration_read}}</span>--}}
-                                                                                                        {{--                                                                                                    @endif--}}
-                                                                                                        {{--                                                                                                    @if($lesson->preview==false )--}}
-                                                                                                        {{--                                                                                                        <span style="float: left;"> <i class="icon-lock"--}}
-                                                                                                        {{--                                                                                                                                       title="برای مشاهده این ویدیو باید دوره را خریداری نمایید!"></i></span>--}}
-                                                                                                        {{--                                                                                                    @endif--}}
+                                                                                                        @if(\Gate::allows('view',$course))
+
+                                                                                                            <a href="{{\MehrLock::lessonUrl($lesson)}}"
+                                                                                                               target="_blank"
+                                                                                                               class="video"
+                                                                                                               ta-toggle="tooltip"
+                                                                                                               data-placement="right"
+                                                                                                            >
+                                                                                                                <i class="icon-play"></i>{{$lesson->title}}
+                                                                                                            </a>
+                                                                                                        @else
+                                                                                                            @if($lesson->preview==true)
+                                                                                                                <a href="{{\MehrLock::lessonUrl($lesson)}}"
+                                                                                                                   target="_blank"
+                                                                                                                   class="video"
+                                                                                                                   ta-toggle="tooltip"
+                                                                                                                   data-placement="right"
+                                                                                                                >
+                                                                                                                    <i class="icon-play"></i>{{$lesson->title}}
+                                                                                                                </a>
+                                                                                                            @endif
+                                                                                                        @endif
                                                                                                     </li>
 
                                                                                                 @endforeach
@@ -451,9 +448,11 @@
                                                 <div id="comments">
                                                     <ul>
                                                         @foreach($course->comments->where('accepted',TRUE)->where('parent_id', null) as $comment)
-                                                            <div class="row" style="padding: -3px;margin: 21px;color: black;">
+                                                            <div class="row"
+                                                                 style="padding: -3px;margin: 21px;color: black;">
                                                                 <li>
-                                                                    <div class="avatar rev-thumb column one-third" style="width: 10%">
+                                                                    <div class="avatar rev-thumb column one-third"
+                                                                         style="width: 10%">
                                                                         <div class="avatar">
                                                                             <img
                                                                                 src="{{$comment->creator? $comment->creator->avatar:Storage::url('theme/user.png')}}"
@@ -461,7 +460,9 @@
                                                                                 class="thumb">
                                                                         </div>
                                                                     </div>
-                                                                    <div class="comment_right clearfix column two-third pad_right1" style="">
+                                                                    <div
+                                                                        class="comment_right clearfix column two-third pad_right1"
+                                                                        style="">
                                                                         <div class="comment_right clearfix">
                                                                             <div class="comment_info">
                                                                                 <p style="padding: 5px;color:#121d5e">{{$comment->creator ? $comment->creator->name:"نظر دهنده"}}</p>
@@ -471,14 +472,19 @@
                                                                     </div>
                                                                     @if($comment->descendants->isNotEmpty())
                                                                         @foreach($comment->descendants as $childComment)
-                                                                            <div class="avatar rev-thumb column one-third" style="width: 10%">
+                                                                            <div
+                                                                                class="avatar rev-thumb column one-third"
+                                                                                style="width: 10%">
                                                                                 <div class="avatar">
-                                                                                    <img src="{{$childComment->creator? $childComment->creator->avatar:Storage::url('theme/user.png')}}"
+                                                                                    <img
+                                                                                        src="{{$childComment->creator? $childComment->creator->avatar:Storage::url('theme/user.png')}}"
                                                                                         alt="{{$childComment->creator ? $childComment->creator->name:"نظر دهنده"}}"
                                                                                         class="thumb">
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="comment_right clearfix column two-third pad_right1" style="">
+                                                                            <div
+                                                                                class="comment_right clearfix column two-third pad_right1"
+                                                                                style="">
                                                                                 <div class="comment_right clearfix">
                                                                                     <div class="comment_info">
                                                                                         <p style="padding: 5px;color:#121d5e"
@@ -501,10 +507,10 @@
                                                 </div>
                                                 <br>
                                             @endif
-                                                <h3 class="h5comments">نظر خود را بیان کنید</h3>
-                                                <div class="column one ">
-                                                    @include('mehr4-theme-danesh::component.comment-creat',['parent'=>'course' ,'parent_id'=>$course->id])
-                                                </div>
+                                            <h3 class="h5comments">نظر خود را بیان کنید</h3>
+                                            <div class="column one ">
+                                                @include('mehr4-theme-danesh::component.comment-creat',['parent'=>'course' ,'parent_id'=>$course->id])
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
