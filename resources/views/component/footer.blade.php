@@ -86,7 +86,7 @@
                         @if(setting('mapimage')!=null)
                             <div class="google-map-wrapper no_border">
                                 <div class="gmap_canvas">
-                                    <a href="{!! setting('iframegooglemapfooter')!!}"> <img src=" {!! setting('mapimage')!!}" style="width: 267px;height: 100px;"></a>
+                                    <a href="{!! setting('iframegooglemapfooter')!!}"> <img src=" {!! setting('mapimage')!!}" style="width: 212px;height: 100px;"></a>
                                 </div>
 
                             </div>
