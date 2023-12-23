@@ -44,6 +44,25 @@
                                         @endforeach
                                 </ul>
                                 <span class="menu-toggle"></span></li>
+                            <li class="submenu " class="current-menu-item" >
+                                <a href=""><span>همایش ملی فرش </span></a>
+                                <ul class="sub-menu" style="display: none;">
+                                    @if(Dpsoft\Mehr\Models\Page::find(4)!=null)
+                                    <li id="menu-item-2958" class="submenu">
+                                        <a href="{{Dpsoft\Mehr\Models\Page::find(4)->url}}"> شرکت در رویداد </a>
+                                    </li>
+                                    @endif
+                                    <li id="menu-item-2958" class="submenu">
+                                        <a href="{{route('tag-posts', ['tag' => '540', 'name' => 'رویداد'])}}"> اخبار</a>
+                                    </li>
+                                        @if(Dpsoft\Mehr\Models\Page::find(3)!=null)
+                                    <li id="menu-item-2958" class="submenu">
+                                        <a href="{{Dpsoft\Mehr\Models\Page::find(3)->url}}">گالری تصاویر</a>
+                                    </li>
+                                        @endif
+
+                                </ul>
+                                <span class="menu-toggle"></span></li>
 
                             <li class="submenu "
                                 @if(Route::currentRouteName()=='blog') class="current-menu-item" @endif>
