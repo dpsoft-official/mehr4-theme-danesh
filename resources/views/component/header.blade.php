@@ -45,7 +45,7 @@
                                 </ul>
                                 <span class="menu-toggle"></span></li>
                             <li class="submenu " class="current-menu-item" >
-                                <a href=""><span>همایش ملی فرش </span></a>
+                                <a href=""><span>رویدادها </span></a>
                                 <ul class="sub-menu" style="display: none;">
                                     @if(Dpsoft\Mehr\Models\Page::find(4)!=null)
                                     <li id="menu-item-2958" class="submenu">
