@@ -24,6 +24,7 @@
     {!! setting('raw_header') !!}
 </head>
 <body style="" class="@yield('class-body')">
+@include('mehr::component.banner')
 <div id="Wrapper">
     <!-- Header Wrapper -->
     <div id="Header_wrapper">
